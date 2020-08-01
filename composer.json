@@ -3,6 +3,10 @@
     "type": "project",
     "description": "boxbilling",
     "require": {
-        "php": "7.1.*"
+        "php": "7.1.32",
+        "ext-gettext": "*"
+    },
+    "require-dev": {
+        "heroku/heroku-buildpack-php": "*"
     }
 }

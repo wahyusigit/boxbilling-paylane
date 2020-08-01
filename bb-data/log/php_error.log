@@ -642,3 +642,22 @@ Stack trace:
 [01-Aug-2020 13:21:06 UTC] Can not checkout empty cart. 0
 [01-Aug-2020 13:22:57 UTC] 8 Array to string conversion /Applications/MAMP/htdocs/boxbilling/bb-data/cache/43/27/e53504469eff7d746713258f74d82f0cb5d97099ff0a0301ec485765c988.php 672
 [01-Aug-2020 13:22:57 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/boxbilling/bb-data/cache/43/27/e53504469eff7d746713258f74d82f0cb5d97099ff0a0301ec485765c988.php on line 672
+[01-Aug-2020 14:26:40 UTC] 8192 Function create_function() is deprecated /Applications/MAMP/htdocs/boxbilling/bb-library/Box/BeanHelper.php 60
+[01-Aug-2020 14:26:40 UTC] PHP Deprecated:  Function create_function() is deprecated in /Applications/MAMP/htdocs/boxbilling/bb-library/Box/BeanHelper.php on line 60
+[01-Aug-2020 14:26:46 UTC] 8192 Function create_function() is deprecated /Applications/MAMP/htdocs/boxbilling/bb-library/Box/BeanHelper.php 60
+[01-Aug-2020 14:26:46 UTC] PHP Deprecated:  Function create_function() is deprecated in /Applications/MAMP/htdocs/boxbilling/bb-library/Box/BeanHelper.php on line 60
+[01-Aug-2020 14:26:53 UTC] 8192 Function create_function() is deprecated /Applications/MAMP/htdocs/boxbilling/bb-library/Box/BeanHelper.php 60
+[01-Aug-2020 14:26:53 UTC] PHP Deprecated:  Function create_function() is deprecated in /Applications/MAMP/htdocs/boxbilling/bb-library/Box/BeanHelper.php on line 60
+[01-Aug-2020 14:27:00 UTC] 8192 Function create_function() is deprecated /Applications/MAMP/htdocs/boxbilling/bb-library/Box/BeanHelper.php 60
+[01-Aug-2020 14:27:00 UTC] PHP Deprecated:  Function create_function() is deprecated in /Applications/MAMP/htdocs/boxbilling/bb-library/Box/BeanHelper.php on line 60
+[01-Aug-2020 14:27:01 UTC] Unable to find template "mod_page_favicon.ico" (looked into: /Applications/MAMP/htdocs/boxbilling/bb-themes/huraga/html, /Applications/MAMP/htdocs/boxbilling/bb-modules/Page/html_client).
+[01-Aug-2020 14:27:01 UTC] Box_Exception: Page not found in /Applications/MAMP/htdocs/boxbilling/bb-library/Box/AppClient.php:72
+Stack trace:
+#0 /Applications/MAMP/htdocs/boxbilling/bb-library/Box/AppClient.php(56): Box_AppClient->render('mod_page_favico...', Array, 'ico')
+#1 [internal function]: Box_AppClient->get_custom_page('favicon')
+#2 /Applications/MAMP/htdocs/boxbilling/bb-library/Box/App.php(220): ReflectionMethod->invokeArgs(Object(Box_AppClient), Array)
+#3 /Applications/MAMP/htdocs/boxbilling/bb-library/Box/App.php(259): Box_App->execute('get_custom_page', Array)
+#4 /Applications/MAMP/htdocs/boxbilling/bb-library/Box/App.php(143): Box_App->processRequest()
+#5 /Applications/MAMP/htdocs/boxbilling/index.php(27): Box_App->run()
+#6 {main}
+[01-Aug-2020 14:27:01 UTC] Page favicon not found
