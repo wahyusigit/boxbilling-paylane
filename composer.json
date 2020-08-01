@@ -4,6 +4,7 @@
     "description": "boxbilling",
     "require": {
         "php": "7.1.33",
-        "ext-gettext": "*"
+        "ext-gettext": "*",
+        "ext-mcrypt": "*"
     }
 }
