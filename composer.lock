@@ -13,7 +13,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "7.1.32",
+        "php": "7.1.33",
         "ext-gettext": "*"
     },
     "platform-dev": []
