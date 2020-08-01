@@ -1,8 +1,8 @@
 {
-    "name": "boxbilling",
+    "name": "boxbilling/boxbilling",
     "type": "project",
     "description": "boxbilling",
     "require": {
-        "php": "5.6.16"
+        "php": "5.6.40"
     }
 }
