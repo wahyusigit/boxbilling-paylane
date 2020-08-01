@@ -680,3 +680,179 @@ Stack trace:
 #5 /Applications/MAMP/htdocs/boxbilling/index.php(27): Box_App->run()
 #6 {main}
 [01-Aug-2020 14:47:49 UTC] Page favicon not found
+[01-Aug-2020 15:28:37 UTC] 2 A non-numeric value encountered /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php 504
+[01-Aug-2020 15:28:37 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php on line 504
+[01-Aug-2020 15:28:37 UTC] 2 A non-numeric value encountered /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php 504
+[01-Aug-2020 15:28:37 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php on line 504
+[01-Aug-2020 15:28:37 UTC] 2 A non-numeric value encountered /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php 504
+[01-Aug-2020 15:28:37 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php on line 504
+[01-Aug-2020 15:28:37 UTC] 2 A non-numeric value encountered /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php 504
+[01-Aug-2020 15:28:37 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php on line 504
+[01-Aug-2020 15:28:37 UTC] 2 A non-numeric value encountered /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php 504
+[01-Aug-2020 15:28:37 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php on line 504
+[01-Aug-2020 15:28:37 UTC] 2 A non-numeric value encountered /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php 504
+[01-Aug-2020 15:28:37 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php on line 504
+[01-Aug-2020 15:28:37 UTC] 2 A non-numeric value encountered /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php 504
+[01-Aug-2020 15:28:37 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php on line 504
+[01-Aug-2020 15:28:37 UTC] 2 A non-numeric value encountered /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php 504
+[01-Aug-2020 15:28:37 UTC] PHP Warning:  A non-numeric value encountered in /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php on line 504
+[01-Aug-2020 15:28:37 UTC] 2 session_start(): Cannot send session cache limiter - headers already sent (output started at /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php:504) /Applications/MAMP/htdocs/boxbilling/bb-library/Box/Session.php 37
+[01-Aug-2020 15:28:37 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php:504) in /Applications/MAMP/htdocs/boxbilling/bb-library/Box/Session.php on line 37
+[01-Aug-2020 15:28:43 UTC] An exception has been thrown during the rendering of a template ("SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of ORDER BY clause is not in GROUP BY clause and contains nonaggregated column 'boxbilling.stm.created_at' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by") in "mod_index_dashboard.phtml" at line 29.
+[01-Aug-2020 15:29:05 UTC] 8192 Function mcrypt_get_iv_size() is deprecated /Applications/MAMP/htdocs/boxbilling/bb-library/Box/Crypt.php 54
+[01-Aug-2020 15:29:05 UTC] PHP Deprecated:  Function mcrypt_get_iv_size() is deprecated in /Applications/MAMP/htdocs/boxbilling/bb-library/Box/Crypt.php on line 54
+[01-Aug-2020 15:29:05 UTC] 8192 Function mcrypt_decrypt() is deprecated /Applications/MAMP/htdocs/boxbilling/bb-library/Box/Crypt.php 61
+[01-Aug-2020 15:29:05 UTC] PHP Deprecated:  Function mcrypt_decrypt() is deprecated in /Applications/MAMP/htdocs/boxbilling/bb-library/Box/Crypt.php on line 61
+[01-Aug-2020 15:29:06 UTC] 
+[01-Aug-2020 15:29:06 UTC] 8192 Function mcrypt_get_iv_size() is deprecated /Applications/MAMP/htdocs/boxbilling/bb-library/Box/Crypt.php 39
+[01-Aug-2020 15:29:06 UTC] PHP Deprecated:  Function mcrypt_get_iv_size() is deprecated in /Applications/MAMP/htdocs/boxbilling/bb-library/Box/Crypt.php on line 39
+[01-Aug-2020 15:29:06 UTC] 8192 Function mcrypt_create_iv() is deprecated /Applications/MAMP/htdocs/boxbilling/bb-library/Box/Crypt.php 40
+[01-Aug-2020 15:29:06 UTC] PHP Deprecated:  Function mcrypt_create_iv() is deprecated in /Applications/MAMP/htdocs/boxbilling/bb-library/Box/Crypt.php on line 40
+[01-Aug-2020 15:29:06 UTC] 8192 Function mcrypt_encrypt() is deprecated /Applications/MAMP/htdocs/boxbilling/bb-library/Box/Crypt.php 41
+[01-Aug-2020 15:29:06 UTC] PHP Deprecated:  Function mcrypt_encrypt() is deprecated in /Applications/MAMP/htdocs/boxbilling/bb-library/Box/Crypt.php on line 41
+[01-Aug-2020 15:29:06 UTC] 8192 Function mcrypt_get_iv_size() is deprecated /Applications/MAMP/htdocs/boxbilling/bb-library/Box/Crypt.php 39
+[01-Aug-2020 15:29:06 UTC] PHP Deprecated:  Function mcrypt_get_iv_size() is deprecated in /Applications/MAMP/htdocs/boxbilling/bb-library/Box/Crypt.php on line 39
+[01-Aug-2020 15:29:06 UTC] 8192 Function mcrypt_create_iv() is deprecated /Applications/MAMP/htdocs/boxbilling/bb-library/Box/Crypt.php 40
+[01-Aug-2020 15:29:06 UTC] PHP Deprecated:  Function mcrypt_create_iv() is deprecated in /Applications/MAMP/htdocs/boxbilling/bb-library/Box/Crypt.php on line 40
+[01-Aug-2020 15:29:06 UTC] 8192 Function mcrypt_encrypt() is deprecated /Applications/MAMP/htdocs/boxbilling/bb-library/Box/Crypt.php 41
+[01-Aug-2020 15:29:06 UTC] PHP Deprecated:  Function mcrypt_encrypt() is deprecated in /Applications/MAMP/htdocs/boxbilling/bb-library/Box/Crypt.php on line 41
+[01-Aug-2020 15:29:06 UTC] 2 session_start(): Cannot send session cache limiter - headers already sent (output started at /Applications/MAMP/htdocs/boxbilling/bb-library/Box/Crypt.php:54) /Applications/MAMP/htdocs/boxbilling/bb-library/Box/Session.php 37
+[01-Aug-2020 15:29:06 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /Applications/MAMP/htdocs/boxbilling/bb-library/Box/Crypt.php:54) in /Applications/MAMP/htdocs/boxbilling/bb-library/Box/Session.php on line 37
+[01-Aug-2020 15:29:18 UTC] An exception has been thrown during the rendering of a template ("SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of ORDER BY clause is not in GROUP BY clause and contains nonaggregated column 'boxbilling.stm.created_at' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by") in "mod_index_dashboard.phtml" at line 29.
+[01-Aug-2020 15:29:49 UTC] 2 Declaration of Model_ProductDomainTable::getProductSetupPrice(Model_Product $product, array $config = Array) should be compatible with Model_ProductTable::getProductSetupPrice(Model_Product $product, ?array $config = NULL) /Applications/MAMP/htdocs/boxbilling/bb-library/Model/ProductDomainTable.php 14
+[01-Aug-2020 15:29:49 UTC] PHP Warning:  Declaration of Model_ProductDomainTable::getProductSetupPrice(Model_Product $product, array $config = Array) should be compatible with Model_ProductTable::getProductSetupPrice(Model_Product $product, ?array $config = NULL) in /Applications/MAMP/htdocs/boxbilling/bb-library/Model/ProductDomainTable.php on line 14
+[01-Aug-2020 15:29:49 UTC] 2 Declaration of Model_ProductDomainTable::getProductPrice(Model_Product $product, array $config = Array) should be compatible with Model_ProductTable::getProductPrice(Model_Product $product, ?array $config = NULL) /Applications/MAMP/htdocs/boxbilling/bb-library/Model/ProductDomainTable.php 14
+[01-Aug-2020 15:29:49 UTC] PHP Warning:  Declaration of Model_ProductDomainTable::getProductPrice(Model_Product $product, array $config = Array) should be compatible with Model_ProductTable::getProductPrice(Model_Product $product, ?array $config = NULL) in /Applications/MAMP/htdocs/boxbilling/bb-library/Model/ProductDomainTable.php on line 14
+[01-Aug-2020 15:30:11 UTC] An exception has been thrown during the rendering of a template ("SQLSTATE[42000]: Syntax error or access violation: 1055 Expression #1 of ORDER BY clause is not in GROUP BY clause and contains nonaggregated column 'boxbilling.stm.created_at' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by") in "mod_index_dashboard.phtml" at line 29.
+[01-Aug-2020 15:31:08 UTC] Invoice 41 could not be paid with credits. Money in balance 1.1 Required: 11.99
+[01-Aug-2020 15:31:08 UTC] 8 Undefined variable: client_id /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php 162
+[01-Aug-2020 15:31:08 UTC] PHP Notice:  Undefined variable: client_id in /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php on line 162
+[01-Aug-2020 15:31:08 UTC] Invoice 41 could not be paid with credits. Money in balance 1.1 Required: 11.99
+[01-Aug-2020 15:31:08 UTC] Invoice 40 could not be paid with credits. Money in balance 1.1 Required: 11.99
+[01-Aug-2020 15:31:08 UTC] Invoice 39 could not be paid with credits. Money in balance 1.1 Required: 35.97
+[01-Aug-2020 15:31:08 UTC] Invoice 38 could not be paid with credits. Money in balance 1.1 Required: 59.95
+[01-Aug-2020 15:31:08 UTC] Invoice 37 could not be paid with credits. Money in balance 1.1 Required: 59.95
+[01-Aug-2020 15:31:08 UTC] 2 Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php:162) /Applications/MAMP/htdocs/boxbilling/bb-ipn.php 55
+[01-Aug-2020 15:31:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php:162) in /Applications/MAMP/htdocs/boxbilling/bb-ipn.php on line 55
+[01-Aug-2020 15:32:24 UTC] Invoice 41 could not be paid with credits. Money in balance 1.1 Required: 11.99
+[01-Aug-2020 15:32:24 UTC] Invoice 41 could not be paid with credits. Money in balance 1.1 Required: 11.99
+[01-Aug-2020 15:32:24 UTC] Invoice 40 could not be paid with credits. Money in balance 1.1 Required: 11.99
+[01-Aug-2020 15:32:24 UTC] Invoice 39 could not be paid with credits. Money in balance 1.1 Required: 35.97
+[01-Aug-2020 15:32:24 UTC] Invoice 38 could not be paid with credits. Money in balance 1.1 Required: 59.95
+[01-Aug-2020 15:32:24 UTC] Invoice 37 could not be paid with credits. Money in balance 1.1 Required: 59.95
+[01-Aug-2020 15:32:43 UTC] 8 Array to string conversion /Applications/MAMP/htdocs/boxbilling/bb-data/cache/43/27/e53504469eff7d746713258f74d82f0cb5d97099ff0a0301ec485765c988.php 672
+[01-Aug-2020 15:32:43 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/boxbilling/bb-data/cache/43/27/e53504469eff7d746713258f74d82f0cb5d97099ff0a0301ec485765c988.php on line 672
+[01-Aug-2020 15:32:56 UTC] Invoice 41 could not be paid with credits. Money in balance 1.1 Required: 11.99
+[01-Aug-2020 15:32:56 UTC] Invoice 41 could not be paid with credits. Money in balance 1.1 Required: 11.99
+[01-Aug-2020 15:32:56 UTC] Invoice 40 could not be paid with credits. Money in balance 1.1 Required: 11.99
+[01-Aug-2020 15:32:56 UTC] Invoice 39 could not be paid with credits. Money in balance 1.1 Required: 35.97
+[01-Aug-2020 15:32:56 UTC] Invoice 38 could not be paid with credits. Money in balance 1.1 Required: 59.95
+[01-Aug-2020 15:32:56 UTC] Invoice 37 could not be paid with credits. Money in balance 1.1 Required: 59.95
+[01-Aug-2020 15:32:57 UTC] 8 Array to string conversion /Applications/MAMP/htdocs/boxbilling/bb-data/cache/43/27/e53504469eff7d746713258f74d82f0cb5d97099ff0a0301ec485765c988.php 672
+[01-Aug-2020 15:32:57 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/boxbilling/bb-data/cache/43/27/e53504469eff7d746713258f74d82f0cb5d97099ff0a0301ec485765c988.php on line 672
+[01-Aug-2020 15:33:26 UTC] 8 Array to string conversion /Applications/MAMP/htdocs/boxbilling/bb-data/cache/43/27/e53504469eff7d746713258f74d82f0cb5d97099ff0a0301ec485765c988.php 672
+[01-Aug-2020 15:33:26 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/boxbilling/bb-data/cache/43/27/e53504469eff7d746713258f74d82f0cb5d97099ff0a0301ec485765c988.php on line 672
+[01-Aug-2020 15:33:28 UTC] Invoice 41 could not be paid with credits. Money in balance 1.1 Required: 11.99
+[01-Aug-2020 15:33:28 UTC] Invoice 41 could not be paid with credits. Money in balance 1.1 Required: 11.99
+[01-Aug-2020 15:33:28 UTC] Invoice 40 could not be paid with credits. Money in balance 1.1 Required: 11.99
+[01-Aug-2020 15:33:28 UTC] Invoice 39 could not be paid with credits. Money in balance 1.1 Required: 35.97
+[01-Aug-2020 15:33:28 UTC] Invoice 38 could not be paid with credits. Money in balance 1.1 Required: 59.95
+[01-Aug-2020 15:33:28 UTC] Invoice 37 could not be paid with credits. Money in balance 1.1 Required: 59.95
+[01-Aug-2020 15:33:28 UTC] 8 Array to string conversion /Applications/MAMP/htdocs/boxbilling/bb-data/cache/43/27/e53504469eff7d746713258f74d82f0cb5d97099ff0a0301ec485765c988.php 672
+[01-Aug-2020 15:33:28 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/boxbilling/bb-data/cache/43/27/e53504469eff7d746713258f74d82f0cb5d97099ff0a0301ec485765c988.php on line 672
+[01-Aug-2020 15:33:34 UTC] 8 Array to string conversion /Applications/MAMP/htdocs/boxbilling/bb-data/cache/43/27/e53504469eff7d746713258f74d82f0cb5d97099ff0a0301ec485765c988.php 672
+[01-Aug-2020 15:33:34 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/boxbilling/bb-data/cache/43/27/e53504469eff7d746713258f74d82f0cb5d97099ff0a0301ec485765c988.php on line 672
+[01-Aug-2020 15:34:04 UTC] Invoice was not found
+[01-Aug-2020 15:34:39 UTC] Invoice 42 could not be paid with credits. Money in balance 1.1 Required: 23.98
+[01-Aug-2020 15:34:39 UTC] Invoice 42 could not be paid with credits. Money in balance 1.1 Required: 23.98
+[01-Aug-2020 15:34:58 UTC] Invoice 42 could not be paid with credits. Money in balance 1.1 Required: 23.98
+[01-Aug-2020 15:34:58 UTC] Invoice 42 could not be paid with credits. Money in balance 1.1 Required: 23.98
+[01-Aug-2020 15:35:05 UTC] 8 Array to string conversion /Applications/MAMP/htdocs/boxbilling/bb-data/cache/43/27/e53504469eff7d746713258f74d82f0cb5d97099ff0a0301ec485765c988.php 672
+[01-Aug-2020 15:35:05 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/boxbilling/bb-data/cache/43/27/e53504469eff7d746713258f74d82f0cb5d97099ff0a0301ec485765c988.php on line 672
+[01-Aug-2020 15:35:07 UTC] Invoice 42 could not be paid with credits. Money in balance 1.1 Required: 23.98
+[01-Aug-2020 15:35:07 UTC] Invoice 42 could not be paid with credits. Money in balance 1.1 Required: 23.98
+[01-Aug-2020 15:35:07 UTC] 8 Array to string conversion /Applications/MAMP/htdocs/boxbilling/bb-data/cache/43/27/e53504469eff7d746713258f74d82f0cb5d97099ff0a0301ec485765c988.php 672
+[01-Aug-2020 15:35:07 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/boxbilling/bb-data/cache/43/27/e53504469eff7d746713258f74d82f0cb5d97099ff0a0301ec485765c988.php on line 672
+[01-Aug-2020 15:36:17 UTC] 8 Array to string conversion /Applications/MAMP/htdocs/boxbilling/bb-data/cache/43/27/e53504469eff7d746713258f74d82f0cb5d97099ff0a0301ec485765c988.php 672
+[01-Aug-2020 15:36:17 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/boxbilling/bb-data/cache/43/27/e53504469eff7d746713258f74d82f0cb5d97099ff0a0301ec485765c988.php on line 672
+[01-Aug-2020 15:39:46 UTC] Invoice 42 could not be paid with credits. Money in balance 1.1 Required: 23.98
+[01-Aug-2020 15:45:48 UTC] Setting invoice 44 as paid with credits
+[01-Aug-2020 15:46:08 UTC] 8 Array to string conversion /Applications/MAMP/htdocs/boxbilling/bb-data/cache/43/27/e53504469eff7d746713258f74d82f0cb5d97099ff0a0301ec485765c988.php 672
+[01-Aug-2020 15:46:08 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/boxbilling/bb-data/cache/43/27/e53504469eff7d746713258f74d82f0cb5d97099ff0a0301ec485765c988.php on line 672
+[01-Aug-2020 15:46:12 UTC] Setting invoice 44 as paid with credits
+[01-Aug-2020 15:46:13 UTC] 8 Array to string conversion /Applications/MAMP/htdocs/boxbilling/bb-data/cache/43/27/e53504469eff7d746713258f74d82f0cb5d97099ff0a0301ec485765c988.php 672
+[01-Aug-2020 15:46:13 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/boxbilling/bb-data/cache/43/27/e53504469eff7d746713258f74d82f0cb5d97099ff0a0301ec485765c988.php on line 672
+[01-Aug-2020 15:46:37 UTC] 8 Undefined index: txn_id /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php 426
+[01-Aug-2020 15:46:37 UTC] PHP Notice:  Undefined index: txn_id in /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php on line 426
+[01-Aug-2020 15:46:37 UTC] 8 Undefined index: payment_status /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php 427
+[01-Aug-2020 15:46:37 UTC] PHP Notice:  Undefined index: payment_status in /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php on line 427
+[01-Aug-2020 15:46:37 UTC] 8 Undefined index: txn_type /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php 428
+[01-Aug-2020 15:46:37 UTC] PHP Notice:  Undefined index: txn_type in /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php on line 428
+[01-Aug-2020 15:46:37 UTC] 8 Undefined index: mc_gross /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php 429
+[01-Aug-2020 15:46:37 UTC] PHP Notice:  Undefined index: mc_gross in /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php on line 429
+[01-Aug-2020 15:46:37 UTC] Setting invoice 44 as paid with credits
+[01-Aug-2020 15:46:41 UTC] 8 Array to string conversion /Applications/MAMP/htdocs/boxbilling/bb-data/cache/43/27/e53504469eff7d746713258f74d82f0cb5d97099ff0a0301ec485765c988.php 672
+[01-Aug-2020 15:46:41 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/boxbilling/bb-data/cache/43/27/e53504469eff7d746713258f74d82f0cb5d97099ff0a0301ec485765c988.php on line 672
+[01-Aug-2020 15:47:03 UTC] 8 Undefined index: txn_id /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php 426
+[01-Aug-2020 15:47:03 UTC] PHP Notice:  Undefined index: txn_id in /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php on line 426
+[01-Aug-2020 15:47:03 UTC] 8 Undefined index: payment_status /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php 427
+[01-Aug-2020 15:47:03 UTC] PHP Notice:  Undefined index: payment_status in /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php on line 427
+[01-Aug-2020 15:47:03 UTC] 8 Undefined index: txn_type /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php 428
+[01-Aug-2020 15:47:03 UTC] PHP Notice:  Undefined index: txn_type in /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php on line 428
+[01-Aug-2020 15:47:03 UTC] 8 Undefined index: mc_gross /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php 429
+[01-Aug-2020 15:47:03 UTC] PHP Notice:  Undefined index: mc_gross in /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php on line 429
+[01-Aug-2020 15:47:03 UTC] Setting invoice 44 as paid with credits
+[01-Aug-2020 15:47:23 UTC] Setting invoice 45 as paid with credits
+[01-Aug-2020 15:47:35 UTC] Setting invoice 46 as paid with credits
+[01-Aug-2020 15:47:44 UTC] Setting invoice 47 as paid with credits
+[01-Aug-2020 15:47:51 UTC] 8 Array to string conversion /Applications/MAMP/htdocs/boxbilling/bb-data/cache/43/27/e53504469eff7d746713258f74d82f0cb5d97099ff0a0301ec485765c988.php 672
+[01-Aug-2020 15:47:51 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/boxbilling/bb-data/cache/43/27/e53504469eff7d746713258f74d82f0cb5d97099ff0a0301ec485765c988.php on line 672
+[01-Aug-2020 15:47:53 UTC] 8 Undefined index: txn_id /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php 426
+[01-Aug-2020 15:47:53 UTC] PHP Notice:  Undefined index: txn_id in /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php on line 426
+[01-Aug-2020 15:47:53 UTC] 8 Undefined index: payment_status /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php 427
+[01-Aug-2020 15:47:53 UTC] PHP Notice:  Undefined index: payment_status in /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php on line 427
+[01-Aug-2020 15:47:53 UTC] 8 Undefined index: txn_type /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php 428
+[01-Aug-2020 15:47:53 UTC] PHP Notice:  Undefined index: txn_type in /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php on line 428
+[01-Aug-2020 15:47:53 UTC] 8 Undefined index: mc_gross /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php 429
+[01-Aug-2020 15:47:53 UTC] PHP Notice:  Undefined index: mc_gross in /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php on line 429
+[01-Aug-2020 15:47:53 UTC] Setting invoice 44 as paid with credits
+[01-Aug-2020 15:48:24 UTC] 8 Undefined index: txn_id /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php 427
+[01-Aug-2020 15:48:24 UTC] PHP Notice:  Undefined index: txn_id in /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php on line 427
+[01-Aug-2020 15:48:24 UTC] 8 Undefined index: payment_status /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php 428
+[01-Aug-2020 15:48:24 UTC] PHP Notice:  Undefined index: payment_status in /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php on line 428
+[01-Aug-2020 15:48:24 UTC] 8 Undefined index: txn_type /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php 429
+[01-Aug-2020 15:48:24 UTC] PHP Notice:  Undefined index: txn_type in /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php on line 429
+[01-Aug-2020 15:48:24 UTC] 8 Undefined index: mc_gross /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php 430
+[01-Aug-2020 15:48:24 UTC] PHP Notice:  Undefined index: mc_gross in /Applications/MAMP/htdocs/boxbilling/bb-library/Payment/Adapter/Paylane.php on line 430
+[01-Aug-2020 15:53:13 UTC] 8 Array to string conversion /Applications/MAMP/htdocs/boxbilling/bb-data/cache/43/27/e53504469eff7d746713258f74d82f0cb5d97099ff0a0301ec485765c988.php 672
+[01-Aug-2020 15:53:13 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/boxbilling/bb-data/cache/43/27/e53504469eff7d746713258f74d82f0cb5d97099ff0a0301ec485765c988.php on line 672
+[01-Aug-2020 15:53:37 UTC] 8 Array to string conversion /Applications/MAMP/htdocs/boxbilling/bb-data/cache/43/27/e53504469eff7d746713258f74d82f0cb5d97099ff0a0301ec485765c988.php 672
+[01-Aug-2020 15:53:37 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/boxbilling/bb-data/cache/43/27/e53504469eff7d746713258f74d82f0cb5d97099ff0a0301ec485765c988.php on line 672
+[01-Aug-2020 15:53:38 UTC] Setting invoice 44 as paid with credits
+[01-Aug-2020 15:53:38 UTC] 8 Array to string conversion /Applications/MAMP/htdocs/boxbilling/bb-data/cache/43/27/e53504469eff7d746713258f74d82f0cb5d97099ff0a0301ec485765c988.php 672
+[01-Aug-2020 15:53:38 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/boxbilling/bb-data/cache/43/27/e53504469eff7d746713258f74d82f0cb5d97099ff0a0301ec485765c988.php on line 672
+[01-Aug-2020 15:53:41 UTC] Setting invoice 44 as paid with credits
+[01-Aug-2020 15:53:41 UTC] 8 Array to string conversion /Applications/MAMP/htdocs/boxbilling/bb-data/cache/43/27/e53504469eff7d746713258f74d82f0cb5d97099ff0a0301ec485765c988.php 672
+[01-Aug-2020 15:53:41 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/boxbilling/bb-data/cache/43/27/e53504469eff7d746713258f74d82f0cb5d97099ff0a0301ec485765c988.php on line 672
+[01-Aug-2020 15:54:16 UTC] 8 Array to string conversion /Applications/MAMP/htdocs/boxbilling/bb-data/cache/43/27/e53504469eff7d746713258f74d82f0cb5d97099ff0a0301ec485765c988.php 672
+[01-Aug-2020 15:54:16 UTC] PHP Notice:  Array to string conversion in /Applications/MAMP/htdocs/boxbilling/bb-data/cache/43/27/e53504469eff7d746713258f74d82f0cb5d97099ff0a0301ec485765c988.php on line 672
+[01-Aug-2020 15:54:20 UTC] IPN is not valid 0
+[01-Aug-2020 15:55:08 UTC] Invoice was not found
+[01-Aug-2020 15:55:09 UTC] Unable to find template "mod_page_favicon.ico" (looked into: /Applications/MAMP/htdocs/boxbilling/bb-themes/huraga/html, /Applications/MAMP/htdocs/boxbilling/bb-modules/Page/html_client).
+[01-Aug-2020 15:55:09 UTC] exception 'Box_Exception' with message 'Page not found' in /Applications/MAMP/htdocs/boxbilling/bb-library/Box/AppClient.php:72
+Stack trace:
+#0 /Applications/MAMP/htdocs/boxbilling/bb-library/Box/AppClient.php(56): Box_AppClient->render('mod_page_favico...', Array, 'ico')
+#1 [internal function]: Box_AppClient->get_custom_page('favicon.ico')
+#2 /Applications/MAMP/htdocs/boxbilling/bb-library/Box/App.php(220): ReflectionMethod->invokeArgs(Object(Box_AppClient), Array)
+#3 /Applications/MAMP/htdocs/boxbilling/bb-library/Box/App.php(259): Box_App->execute('get_custom_page', Array)
+#4 /Applications/MAMP/htdocs/boxbilling/bb-library/Box/App.php(143): Box_App->processRequest()
+#5 /Applications/MAMP/htdocs/boxbilling/index.php(27): Box_App->run()
+#6 {main}
+[01-Aug-2020 15:55:09 UTC] Page favicon not found
+[01-Aug-2020 15:55:56 UTC] Order not found
+[01-Aug-2020 15:56:00 UTC] Order not found
+[01-Aug-2020 15:56:16 UTC] Setting invoice 48 as paid with credits
+[01-Aug-2020 15:56:49 UTC] Invoice 49 could not be paid with credits. Money in balance 1.1 Required: 23.98
+[01-Aug-2020 15:56:49 UTC] Invoice 49 could not be paid with credits. Money in balance 1.1 Required: 23.98
+[01-Aug-2020 15:58:09 UTC] Setting invoice 50 as paid with credits
+[01-Aug-2020 15:58:09 UTC] Invoice 49 could not be paid with credits. Money in balance 1.1 Required: 23.98

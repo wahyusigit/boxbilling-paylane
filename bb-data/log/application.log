@@ -10725,3 +10725,1869 @@
   'client_id' => '1',
   'id' => '39',
 )
+2020-08-01 15:29:06 DEBUG (7): onBeforeClientLogin: array (
+  'email' => 'admin@admin.com',
+  'password' => 'admin@admin.com',
+  'remember' => 'on',
+  'ip' => '::1',
+)
+2020-08-01 15:29:06 DEBUG (7): onEventClientLoginFailed: array (
+  'email' => 'admin@admin.com',
+  'password' => 'admin@admin.com',
+  'remember' => 'on',
+  'ip' => '::1',
+)
+2020-08-01 15:30:45 DEBUG (7): onBeforeProductAddedToCart: array (
+  'register_sld' => '123',
+  'register_tld' => '.com',
+  'register_years' => '1',
+  'ns1' => '',
+  'ns2' => '',
+  'ns3' => '',
+  'ns4' => '',
+  'transfer_sld' => '',
+  'transfer_tld' => '.com',
+  'transfer_code' => '',
+  'id' => '1',
+  'action' => 'register',
+  'multiple' => '1',
+  'cart_id' => '41',
+  'product_id' => '1',
+)
+2020-08-01 15:30:45 INFO (6): Added "Domains registration and transfer" to shopping cart
+2020-08-01 15:30:45 DEBUG (7): onAfterProductAddedToCart: array (
+  'register_sld' => '123',
+  'register_tld' => '.com',
+  'register_years' => '1',
+  'ns1' => '',
+  'ns2' => '',
+  'ns3' => '',
+  'ns4' => '',
+  'transfer_sld' => '',
+  'transfer_tld' => '.com',
+  'transfer_code' => '',
+  'id' => '1',
+  'action' => 'register',
+  'multiple' => '1',
+  'cart_id' => '41',
+  'product_id' => '1',
+)
+2020-08-01 15:30:52 DEBUG (7): onBeforeClientCheckout: array (
+  'ip' => '::1',
+  'client_id' => '1',
+  'cart_id' => '41',
+)
+2020-08-01 15:30:52 INFO (6): Prepared new invoice "41"
+2020-08-01 15:30:52 DEBUG (7): onBeforeAdminInvoiceApprove: array (
+  'id' => '41',
+)
+2020-08-01 15:30:52 DEBUG (7): onAfterAdminInvoiceApprove: array (
+  'id' => '41',
+)
+2020-08-01 15:30:52 INFO (6): Approved invoice "41"
+2020-08-01 15:30:52 INFO (6): Checked out shopping cart
+2020-08-01 15:30:52 DEBUG (7): onAfterClientOrderCreate: array (
+  'ip' => '::1',
+  'client_id' => '1',
+  'id' => '40',
+)
+2020-08-01 15:31:08 DEBUG (7): onBeforeAdminTransactionCreate: array (
+  'skip_validation' => true,
+  'bb_invoice_id' => '41',
+  'bb_gateway_id' => '5',
+  'get' => 
+  array (
+    'bb_invoice_id' => '41',
+    'bb_gateway_id' => '5',
+    'bb_redirect' => '1',
+    'bb_invoice_hash' => 'c9d68b140528f76bdf01b221771efd21e8eae681',
+  ),
+  'post' => 
+  array (
+    'status' => 'PERFORMED',
+    'amount' => '11.99',
+    'currency' => 'USD',
+    'description' => '41',
+    'hash' => '787ba1659011a0d6334b458766de47395effe53e',
+    'id_sale' => '21361727',
+  ),
+  'server' => 
+  array (
+    'HTTP_AUTHORIZATION' => '',
+    'HTTP_HOST' => 'localhost:8888',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'HTTP_ACCEPT_LANGUAGE' => 'id,en-US;q=0.7,en;q=0.3',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'CONTENT_LENGTH' => '120',
+    'HTTP_ORIGIN' => 'null',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_COOKIE' => 'PHPSESSID=6eb4ccd80e206e9b38e195057dfc4930',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'localhost',
+    'SERVER_ADDR' => '::1',
+    'SERVER_PORT' => '8888',
+    'REMOTE_ADDR' => '::1',
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/boxbilling',
+    'SERVER_ADMIN' => 'you@example.com',
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/boxbilling/bb-ipn.php',
+    'REMOTE_PORT' => '59566',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'POST',
+    'QUERY_STRING' => 'bb_invoice_id=41&bb_gateway_id=5&bb_redirect=1&bb_invoice_hash=c9d68b140528f76bdf01b221771efd21e8eae681',
+    'REQUEST_URI' => '/bb-ipn.php?bb_invoice_id=41&bb_gateway_id=5&bb_redirect=1&bb_invoice_hash=c9d68b140528f76bdf01b221771efd21e8eae681',
+    'SCRIPT_NAME' => '/bb-ipn.php',
+    'PHP_SELF' => '/bb-ipn.php',
+    'REQUEST_TIME_FLOAT' => 1596295868.6410000324249267578125,
+    'REQUEST_TIME' => 1596295868,
+    'argv' => 
+    array (
+      0 => 'bb_invoice_id=41&bb_gateway_id=5&bb_redirect=1&bb_invoice_hash=c9d68b140528f76bdf01b221771efd21e8eae681',
+    ),
+    'argc' => 1,
+  ),
+  'http_raw_post_data' => 'status=PERFORMED&amount=11.99&currency=USD&description=41&hash=787ba1659011a0d6334b458766de47395effe53e&id_sale=21361727',
+)
+2020-08-01 15:31:08 INFO (6): Received transaction 104 from payment gateway 5
+2020-08-01 15:31:08 DEBUG (7): onAfterAdminTransactionCreate: array (
+  'id' => 104,
+)
+2020-08-01 15:31:08 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '104',
+)
+2020-08-01 15:31:08 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '104',
+)
+2020-08-01 15:31:08 INFO (6): Updated transaction #104
+2020-08-01 15:31:08 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '104',
+)
+2020-08-01 15:31:08 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '104',
+)
+2020-08-01 15:31:08 INFO (6): Updated transaction #104
+2020-08-01 15:31:08 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '104',
+)
+2020-08-01 15:31:08 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '104',
+)
+2020-08-01 15:31:08 INFO (6): Updated transaction #104
+2020-08-01 15:31:08 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '104',
+)
+2020-08-01 15:31:08 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '104',
+)
+2020-08-01 15:31:08 INFO (6): Updated transaction #104
+2020-08-01 15:31:08 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '104',
+)
+2020-08-01 15:31:08 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '104',
+)
+2020-08-01 15:31:08 INFO (6): Updated transaction #104
+2020-08-01 15:31:08 INFO (6): Cover invoice with client credits
+2020-08-01 15:31:08 INFO (6): Executed action to try cover unpaid invoices with client credits
+2020-08-01 15:31:08 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '104',
+)
+2020-08-01 15:31:08 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '104',
+)
+2020-08-01 15:31:08 INFO (6): Updated transaction #104
+2020-08-01 15:32:24 DEBUG (7): onBeforeAdminTransactionCreate: array (
+  'skip_validation' => true,
+  'bb_invoice_id' => '41',
+  'bb_gateway_id' => '5',
+  'get' => 
+  array (
+    'bb_invoice_id' => '41',
+    'bb_gateway_id' => '5',
+    'bb_redirect' => '1',
+    'bb_invoice_hash' => 'c9d68b140528f76bdf01b221771efd21e8eae681',
+  ),
+  'post' => 
+  array (
+    'status' => 'PERFORMED',
+    'amount' => '11.99',
+    'currency' => 'USD',
+    'description' => '41',
+    'hash' => '787ba1659011a0d6334b458766de47395effe53e',
+    'id_sale' => '21361727',
+  ),
+  'server' => 
+  array (
+    'HTTP_AUTHORIZATION' => '',
+    'HTTP_HOST' => 'localhost:8888',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'HTTP_ACCEPT_LANGUAGE' => 'id,en-US;q=0.7,en;q=0.3',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'CONTENT_LENGTH' => '120',
+    'HTTP_ORIGIN' => 'null',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_COOKIE' => 'PHPSESSID=6eb4ccd80e206e9b38e195057dfc4930',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'localhost',
+    'SERVER_ADDR' => '::1',
+    'SERVER_PORT' => '8888',
+    'REMOTE_ADDR' => '::1',
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/boxbilling',
+    'SERVER_ADMIN' => 'you@example.com',
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/boxbilling/bb-ipn.php',
+    'REMOTE_PORT' => '59580',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'POST',
+    'QUERY_STRING' => 'bb_invoice_id=41&bb_gateway_id=5&bb_redirect=1&bb_invoice_hash=c9d68b140528f76bdf01b221771efd21e8eae681',
+    'REQUEST_URI' => '/bb-ipn.php?bb_invoice_id=41&bb_gateway_id=5&bb_redirect=1&bb_invoice_hash=c9d68b140528f76bdf01b221771efd21e8eae681',
+    'SCRIPT_NAME' => '/bb-ipn.php',
+    'PHP_SELF' => '/bb-ipn.php',
+    'REQUEST_TIME_FLOAT' => 1596295944.566999912261962890625,
+    'REQUEST_TIME' => 1596295944,
+    'argv' => 
+    array (
+      0 => 'bb_invoice_id=41&bb_gateway_id=5&bb_redirect=1&bb_invoice_hash=c9d68b140528f76bdf01b221771efd21e8eae681',
+    ),
+    'argc' => 1,
+  ),
+  'http_raw_post_data' => 'status=PERFORMED&amount=11.99&currency=USD&description=41&hash=787ba1659011a0d6334b458766de47395effe53e&id_sale=21361727',
+)
+2020-08-01 15:32:24 INFO (6): Received transaction 105 from payment gateway 5
+2020-08-01 15:32:24 DEBUG (7): onAfterAdminTransactionCreate: array (
+  'id' => 105,
+)
+2020-08-01 15:32:24 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '105',
+)
+2020-08-01 15:32:24 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '105',
+)
+2020-08-01 15:32:24 INFO (6): Updated transaction #105
+2020-08-01 15:32:24 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '105',
+)
+2020-08-01 15:32:24 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '105',
+)
+2020-08-01 15:32:24 INFO (6): Updated transaction #105
+2020-08-01 15:32:24 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '105',
+)
+2020-08-01 15:32:24 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '105',
+)
+2020-08-01 15:32:24 INFO (6): Updated transaction #105
+2020-08-01 15:32:24 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '105',
+)
+2020-08-01 15:32:24 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '105',
+)
+2020-08-01 15:32:24 INFO (6): Updated transaction #105
+2020-08-01 15:32:24 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '105',
+)
+2020-08-01 15:32:24 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '105',
+)
+2020-08-01 15:32:24 INFO (6): Updated transaction #105
+2020-08-01 15:32:24 INFO (6): Cover invoice with client credits
+2020-08-01 15:32:24 INFO (6): Executed action to try cover unpaid invoices with client credits
+2020-08-01 15:32:24 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '105',
+)
+2020-08-01 15:32:24 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '105',
+)
+2020-08-01 15:32:24 INFO (6): Updated transaction #105
+2020-08-01 15:32:56 DEBUG (7): onBeforeAdminTransactionProcess: array (
+  'id' => '105',
+)
+2020-08-01 15:32:56 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '105',
+)
+2020-08-01 15:32:56 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '105',
+)
+2020-08-01 15:32:56 INFO (6): Updated transaction #105
+2020-08-01 15:32:56 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '105',
+)
+2020-08-01 15:32:56 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '105',
+)
+2020-08-01 15:32:56 INFO (6): Updated transaction #105
+2020-08-01 15:32:56 INFO (6): Cover invoice with client credits
+2020-08-01 15:32:56 INFO (6): Executed action to try cover unpaid invoices with client credits
+2020-08-01 15:32:56 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '105',
+)
+2020-08-01 15:32:56 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '105',
+)
+2020-08-01 15:32:56 INFO (6): Updated transaction #105
+2020-08-01 15:32:56 DEBUG (7): onAfterAdminTransactionProcess: array (
+  'id' => '105',
+)
+2020-08-01 15:32:56 INFO (6): Processed transaction #105
+2020-08-01 15:33:28 DEBUG (7): onBeforeAdminTransactionProcess: array (
+  'id' => '104',
+)
+2020-08-01 15:33:28 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '104',
+)
+2020-08-01 15:33:28 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '104',
+)
+2020-08-01 15:33:28 INFO (6): Updated transaction #104
+2020-08-01 15:33:28 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '104',
+)
+2020-08-01 15:33:28 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '104',
+)
+2020-08-01 15:33:28 INFO (6): Updated transaction #104
+2020-08-01 15:33:28 INFO (6): Cover invoice with client credits
+2020-08-01 15:33:28 INFO (6): Executed action to try cover unpaid invoices with client credits
+2020-08-01 15:33:28 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '104',
+)
+2020-08-01 15:33:28 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '104',
+)
+2020-08-01 15:33:28 INFO (6): Updated transaction #104
+2020-08-01 15:33:28 DEBUG (7): onAfterAdminTransactionProcess: array (
+  'id' => '104',
+)
+2020-08-01 15:33:28 INFO (6): Processed transaction #104
+2020-08-01 15:33:43 DEBUG (7): onBeforeAdminInvoiceDelete: array (
+  'id' => '41',
+)
+2020-08-01 15:33:43 DEBUG (7): onAfterAdminInvoiceDelete: array (
+  'id' => '41',
+)
+2020-08-01 15:33:43 INFO (6): Removed invoice #41
+2020-08-01 15:33:43 DEBUG (7): onBeforeAdminInvoiceDelete: array (
+  'id' => '40',
+)
+2020-08-01 15:33:43 DEBUG (7): onAfterAdminInvoiceDelete: array (
+  'id' => '40',
+)
+2020-08-01 15:33:43 INFO (6): Removed invoice #40
+2020-08-01 15:33:43 DEBUG (7): onBeforeAdminInvoiceDelete: array (
+  'id' => '39',
+)
+2020-08-01 15:33:43 DEBUG (7): onAfterAdminInvoiceDelete: array (
+  'id' => '39',
+)
+2020-08-01 15:33:43 INFO (6): Removed invoice #39
+2020-08-01 15:33:43 DEBUG (7): onBeforeAdminInvoiceDelete: array (
+  'id' => '38',
+)
+2020-08-01 15:33:43 DEBUG (7): onAfterAdminInvoiceDelete: array (
+  'id' => '38',
+)
+2020-08-01 15:33:43 INFO (6): Removed invoice #38
+2020-08-01 15:33:43 DEBUG (7): onBeforeAdminInvoiceDelete: array (
+  'id' => '37',
+)
+2020-08-01 15:33:43 DEBUG (7): onAfterAdminInvoiceDelete: array (
+  'id' => '37',
+)
+2020-08-01 15:33:43 INFO (6): Removed invoice #37
+2020-08-01 15:33:43 DEBUG (7): onBeforeAdminInvoiceDelete: array (
+  'id' => '36',
+)
+2020-08-01 15:33:43 DEBUG (7): onAfterAdminInvoiceDelete: array (
+  'id' => '36',
+)
+2020-08-01 15:33:43 INFO (6): Removed invoice #36
+2020-08-01 15:33:43 DEBUG (7): onBeforeAdminInvoiceDelete: array (
+  'id' => '35',
+)
+2020-08-01 15:33:43 DEBUG (7): onAfterAdminInvoiceDelete: array (
+  'id' => '35',
+)
+2020-08-01 15:33:43 INFO (6): Removed invoice #35
+2020-08-01 15:33:43 DEBUG (7): onBeforeAdminInvoiceDelete: array (
+  'id' => '34',
+)
+2020-08-01 15:33:43 DEBUG (7): onAfterAdminInvoiceDelete: array (
+  'id' => '34',
+)
+2020-08-01 15:33:43 INFO (6): Removed invoice #34
+2020-08-01 15:33:43 DEBUG (7): onBeforeAdminInvoiceDelete: array (
+  'id' => '33',
+)
+2020-08-01 15:33:43 DEBUG (7): onAfterAdminInvoiceDelete: array (
+  'id' => '33',
+)
+2020-08-01 15:33:43 INFO (6): Removed invoice #33
+2020-08-01 15:33:43 DEBUG (7): onBeforeAdminInvoiceDelete: array (
+  'id' => '32',
+)
+2020-08-01 15:33:43 DEBUG (7): onAfterAdminInvoiceDelete: array (
+  'id' => '32',
+)
+2020-08-01 15:33:43 INFO (6): Removed invoice #32
+2020-08-01 15:33:43 DEBUG (7): onBeforeAdminInvoiceDelete: array (
+  'id' => '31',
+)
+2020-08-01 15:33:43 DEBUG (7): onAfterAdminInvoiceDelete: array (
+  'id' => '31',
+)
+2020-08-01 15:33:43 INFO (6): Removed invoice #31
+2020-08-01 15:33:51 DEBUG (7): onBeforeAdminOrderDelete: array (
+  'id' => '40',
+)
+2020-08-01 15:33:51 DEBUG (7): onAfterAdminOrderDelete: array (
+  'id' => '40',
+)
+2020-08-01 15:33:51 INFO (6): Deleted order #40
+2020-08-01 15:33:51 DEBUG (7): onBeforeAdminOrderDelete: array (
+  'id' => '39',
+)
+2020-08-01 15:33:51 DEBUG (7): onAfterAdminOrderDelete: array (
+  'id' => '39',
+)
+2020-08-01 15:33:51 INFO (6): Deleted order #39
+2020-08-01 15:33:51 DEBUG (7): onBeforeAdminOrderDelete: array (
+  'id' => '38',
+)
+2020-08-01 15:33:51 DEBUG (7): onAfterAdminOrderDelete: array (
+  'id' => '38',
+)
+2020-08-01 15:33:51 INFO (6): Deleted order #38
+2020-08-01 15:33:51 DEBUG (7): onBeforeAdminOrderDelete: array (
+  'id' => '37',
+)
+2020-08-01 15:33:51 DEBUG (7): onAfterAdminOrderDelete: array (
+  'id' => '37',
+)
+2020-08-01 15:33:51 INFO (6): Deleted order #37
+2020-08-01 15:33:51 DEBUG (7): onBeforeAdminOrderDelete: array (
+  'id' => '36',
+)
+2020-08-01 15:33:51 DEBUG (7): onAfterAdminOrderDelete: array (
+  'id' => '36',
+)
+2020-08-01 15:33:51 INFO (6): Deleted order #36
+2020-08-01 15:33:51 DEBUG (7): onBeforeAdminOrderDelete: array (
+  'id' => '35',
+)
+2020-08-01 15:33:51 DEBUG (7): onAfterAdminOrderDelete: array (
+  'id' => '35',
+)
+2020-08-01 15:33:51 INFO (6): Deleted order #35
+2020-08-01 15:33:51 DEBUG (7): onBeforeAdminOrderDelete: array (
+  'id' => '34',
+)
+2020-08-01 15:33:51 DEBUG (7): onAfterAdminOrderDelete: array (
+  'id' => '34',
+)
+2020-08-01 15:33:51 INFO (6): Deleted order #34
+2020-08-01 15:33:51 DEBUG (7): onBeforeAdminOrderDelete: array (
+  'id' => '33',
+)
+2020-08-01 15:33:51 DEBUG (7): onAfterAdminOrderDelete: array (
+  'id' => '33',
+)
+2020-08-01 15:33:51 INFO (6): Deleted order #33
+2020-08-01 15:33:51 DEBUG (7): onBeforeAdminOrderDelete: array (
+  'id' => '32',
+)
+2020-08-01 15:33:51 DEBUG (7): onAfterAdminOrderDelete: array (
+  'id' => '32',
+)
+2020-08-01 15:33:51 INFO (6): Deleted order #32
+2020-08-01 15:33:51 DEBUG (7): onBeforeAdminOrderDelete: array (
+  'id' => '31',
+)
+2020-08-01 15:33:51 DEBUG (7): onAfterAdminOrderDelete: array (
+  'id' => '31',
+)
+2020-08-01 15:33:51 INFO (6): Deleted order #31
+2020-08-01 15:33:51 DEBUG (7): onBeforeAdminOrderDelete: array (
+  'id' => '30',
+)
+2020-08-01 15:33:51 DEBUG (7): onAfterAdminOrderDelete: array (
+  'id' => '30',
+)
+2020-08-01 15:33:51 INFO (6): Deleted order #30
+2020-08-01 15:33:59 INFO (6): Removed transaction #105
+2020-08-01 15:33:59 INFO (6): Removed transaction #104
+2020-08-01 15:33:59 INFO (6): Removed transaction #103
+2020-08-01 15:33:59 INFO (6): Removed transaction #102
+2020-08-01 15:33:59 INFO (6): Removed transaction #101
+2020-08-01 15:34:22 DEBUG (7): onBeforeProductAddedToCart: array (
+  'register_sld' => '111',
+  'register_tld' => '.com',
+  'register_years' => '2',
+  'ns1' => '',
+  'ns2' => '',
+  'ns3' => '',
+  'ns4' => '',
+  'transfer_sld' => '',
+  'transfer_tld' => '.com',
+  'transfer_code' => '',
+  'id' => '1',
+  'action' => 'register',
+  'multiple' => '1',
+  'cart_id' => '42',
+  'product_id' => '1',
+)
+2020-08-01 15:34:22 INFO (6): Added "Domains registration and transfer" to shopping cart
+2020-08-01 15:34:22 DEBUG (7): onAfterProductAddedToCart: array (
+  'register_sld' => '111',
+  'register_tld' => '.com',
+  'register_years' => '2',
+  'ns1' => '',
+  'ns2' => '',
+  'ns3' => '',
+  'ns4' => '',
+  'transfer_sld' => '',
+  'transfer_tld' => '.com',
+  'transfer_code' => '',
+  'id' => '1',
+  'action' => 'register',
+  'multiple' => '1',
+  'cart_id' => '42',
+  'product_id' => '1',
+)
+2020-08-01 15:34:25 DEBUG (7): onBeforeClientCheckout: array (
+  'ip' => '::1',
+  'client_id' => '1',
+  'cart_id' => '42',
+)
+2020-08-01 15:34:25 INFO (6): Prepared new invoice "42"
+2020-08-01 15:34:25 DEBUG (7): onBeforeAdminInvoiceApprove: array (
+  'id' => '42',
+)
+2020-08-01 15:34:25 DEBUG (7): onAfterAdminInvoiceApprove: array (
+  'id' => '42',
+)
+2020-08-01 15:34:25 INFO (6): Approved invoice "42"
+2020-08-01 15:34:25 INFO (6): Checked out shopping cart
+2020-08-01 15:34:25 DEBUG (7): onAfterClientOrderCreate: array (
+  'ip' => '::1',
+  'client_id' => '1',
+  'id' => '41',
+)
+2020-08-01 15:34:39 DEBUG (7): onBeforeAdminTransactionCreate: array (
+  'skip_validation' => true,
+  'bb_invoice_id' => '42',
+  'bb_gateway_id' => '5',
+  'get' => 
+  array (
+    'bb_invoice_id' => '42',
+    'bb_gateway_id' => '5',
+    'bb_redirect' => '1',
+    'bb_invoice_hash' => '9fac1f8abc8599676b018cf59be9a19201740c01',
+  ),
+  'post' => 
+  array (
+    'status' => 'PERFORMED',
+    'amount' => '23.98',
+    'currency' => 'USD',
+    'description' => '42',
+    'hash' => 'cb1a6239e4ec70e8896fb02fbc1bf390bd311af9',
+    'id_sale' => '21361754',
+  ),
+  'server' => 
+  array (
+    'HTTP_AUTHORIZATION' => '',
+    'HTTP_HOST' => 'localhost:8888',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'HTTP_ACCEPT_LANGUAGE' => 'id,en-US;q=0.7,en;q=0.3',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'CONTENT_LENGTH' => '120',
+    'HTTP_ORIGIN' => 'null',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_COOKIE' => 'PHPSESSID=6eb4ccd80e206e9b38e195057dfc4930',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'localhost',
+    'SERVER_ADDR' => '::1',
+    'SERVER_PORT' => '8888',
+    'REMOTE_ADDR' => '::1',
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/boxbilling',
+    'SERVER_ADMIN' => 'you@example.com',
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/boxbilling/bb-ipn.php',
+    'REMOTE_PORT' => '59626',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'POST',
+    'QUERY_STRING' => 'bb_invoice_id=42&bb_gateway_id=5&bb_redirect=1&bb_invoice_hash=9fac1f8abc8599676b018cf59be9a19201740c01',
+    'REQUEST_URI' => '/bb-ipn.php?bb_invoice_id=42&bb_gateway_id=5&bb_redirect=1&bb_invoice_hash=9fac1f8abc8599676b018cf59be9a19201740c01',
+    'SCRIPT_NAME' => '/bb-ipn.php',
+    'PHP_SELF' => '/bb-ipn.php',
+    'REQUEST_TIME_FLOAT' => 1596296079.0039999485015869140625,
+    'REQUEST_TIME' => 1596296079,
+    'argv' => 
+    array (
+      0 => 'bb_invoice_id=42&bb_gateway_id=5&bb_redirect=1&bb_invoice_hash=9fac1f8abc8599676b018cf59be9a19201740c01',
+    ),
+    'argc' => 1,
+  ),
+  'http_raw_post_data' => 'status=PERFORMED&amount=23.98&currency=USD&description=42&hash=cb1a6239e4ec70e8896fb02fbc1bf390bd311af9&id_sale=21361754',
+)
+2020-08-01 15:34:39 INFO (6): Received transaction 106 from payment gateway 5
+2020-08-01 15:34:39 DEBUG (7): onAfterAdminTransactionCreate: array (
+  'id' => 106,
+)
+2020-08-01 15:34:39 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '106',
+)
+2020-08-01 15:34:39 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '106',
+)
+2020-08-01 15:34:39 INFO (6): Updated transaction #106
+2020-08-01 15:34:39 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '106',
+)
+2020-08-01 15:34:39 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '106',
+)
+2020-08-01 15:34:39 INFO (6): Updated transaction #106
+2020-08-01 15:34:39 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '106',
+)
+2020-08-01 15:34:39 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '106',
+)
+2020-08-01 15:34:39 INFO (6): Updated transaction #106
+2020-08-01 15:34:39 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '106',
+)
+2020-08-01 15:34:39 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '106',
+)
+2020-08-01 15:34:39 INFO (6): Updated transaction #106
+2020-08-01 15:34:39 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '106',
+)
+2020-08-01 15:34:39 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '106',
+)
+2020-08-01 15:34:39 INFO (6): Updated transaction #106
+2020-08-01 15:34:39 INFO (6): Cover invoice with client credits
+2020-08-01 15:34:39 INFO (6): Executed action to try cover unpaid invoices with client credits
+2020-08-01 15:34:39 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '106',
+)
+2020-08-01 15:34:39 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '106',
+)
+2020-08-01 15:34:39 INFO (6): Updated transaction #106
+2020-08-01 15:34:58 DEBUG (7): onBeforeAdminTransactionProcess: array (
+  'id' => '106',
+)
+2020-08-01 15:34:58 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '106',
+)
+2020-08-01 15:34:58 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '106',
+)
+2020-08-01 15:34:58 INFO (6): Updated transaction #106
+2020-08-01 15:34:58 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '106',
+)
+2020-08-01 15:34:58 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '106',
+)
+2020-08-01 15:34:58 INFO (6): Updated transaction #106
+2020-08-01 15:34:58 INFO (6): Cover invoice with client credits
+2020-08-01 15:34:58 INFO (6): Executed action to try cover unpaid invoices with client credits
+2020-08-01 15:34:58 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '106',
+)
+2020-08-01 15:34:58 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '106',
+)
+2020-08-01 15:34:58 INFO (6): Updated transaction #106
+2020-08-01 15:34:58 DEBUG (7): onAfterAdminTransactionProcess: array (
+  'id' => '106',
+)
+2020-08-01 15:34:58 INFO (6): Processed transaction #106
+2020-08-01 15:35:07 DEBUG (7): onBeforeAdminTransactionProcess: array (
+  'id' => '106',
+)
+2020-08-01 15:35:07 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '106',
+)
+2020-08-01 15:35:07 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '106',
+)
+2020-08-01 15:35:07 INFO (6): Updated transaction #106
+2020-08-01 15:35:07 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '106',
+)
+2020-08-01 15:35:07 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '106',
+)
+2020-08-01 15:35:07 INFO (6): Updated transaction #106
+2020-08-01 15:35:07 INFO (6): Cover invoice with client credits
+2020-08-01 15:35:07 INFO (6): Executed action to try cover unpaid invoices with client credits
+2020-08-01 15:35:07 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '106',
+)
+2020-08-01 15:35:07 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '106',
+)
+2020-08-01 15:35:07 INFO (6): Updated transaction #106
+2020-08-01 15:35:07 DEBUG (7): onAfterAdminTransactionProcess: array (
+  'id' => '106',
+)
+2020-08-01 15:35:07 INFO (6): Processed transaction #106
+2020-08-01 15:38:15 DEBUG (7): onAfterAdminInvoicePaymentReceived: array (
+  'id' => '42',
+)
+2020-08-01 15:38:15 DEBUG (7): onBeforeAdminOrderActivate: array (
+  'id' => '41',
+)
+2020-08-01 15:38:15 DEBUG (7): onAfterAdminOrderActivate: array (
+  'id' => '41',
+)
+2020-08-01 15:38:15 INFO (6): Activated order #41
+2020-08-01 15:38:15 INFO (6): Marked invoice "42" as paid
+2020-08-01 15:38:45 DEBUG (7): onBeforeAdminInvoiceRefund: array (
+  'id' => '42',
+)
+2020-08-01 15:38:45 DEBUG (7): onAfterAdminInvoiceRefund: array (
+  'id' => '42',
+)
+2020-08-01 15:38:45 INFO (6): Refunded invoice #42
+2020-08-01 15:39:46 DEBUG (7): onBeforeAdminTransactionProcess: array (
+  'id' => '106',
+)
+2020-08-01 15:39:46 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '106',
+)
+2020-08-01 15:39:46 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '106',
+)
+2020-08-01 15:39:46 INFO (6): Updated transaction #106
+2020-08-01 15:39:46 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '106',
+)
+2020-08-01 15:39:46 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '106',
+)
+2020-08-01 15:39:46 INFO (6): Updated transaction #106
+2020-08-01 15:39:46 INFO (6): Cover invoice with client credits
+2020-08-01 15:39:46 INFO (6): Executed action to try cover unpaid invoices with client credits
+2020-08-01 15:39:46 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '106',
+)
+2020-08-01 15:39:46 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '106',
+)
+2020-08-01 15:39:46 INFO (6): Updated transaction #106
+2020-08-01 15:39:46 DEBUG (7): onAfterAdminTransactionProcess: array (
+  'id' => '106',
+)
+2020-08-01 15:39:46 INFO (6): Processed transaction #106
+2020-08-01 15:40:20 DEBUG (7): onBeforeClientOpenTicket: array (
+  'support_helpdesk_id' => '1',
+  'subject' => 'I would like to cancel Domain 111.com registration',
+  'content' => 'sss',
+  'rel_type' => 'order',
+  'rel_id' => '41',
+  'rel_task' => 'cancel',
+  'client_id' => '1',
+)
+2020-08-01 15:40:20 DEBUG (7): onAfterClientOpenTicket: array (
+  'id' => '1',
+)
+2020-08-01 15:40:20 INFO (6): Submitted new ticket "1"
+2020-08-01 15:40:35 INFO (6): Marked ticket #1 task as complete
+2020-08-01 15:40:45 INFO (6): Removed ticket "1"
+2020-08-01 15:40:50 DEBUG (7): onBeforeAdminOrderDelete: array (
+  'id' => '41',
+)
+2020-08-01 15:40:50 DEBUG (7): onAfterAdminOrderDelete: array (
+  'id' => '41',
+)
+2020-08-01 15:40:50 INFO (6): Deleted order #41
+2020-08-01 15:40:57 INFO (6): Removed transaction #106
+2020-08-01 15:41:06 DEBUG (7): onBeforeAdminInvoiceDelete: array (
+  'id' => '43',
+)
+2020-08-01 15:41:06 DEBUG (7): onAfterAdminInvoiceDelete: array (
+  'id' => '43',
+)
+2020-08-01 15:41:06 INFO (6): Removed invoice #43
+2020-08-01 15:41:06 DEBUG (7): onBeforeAdminInvoiceDelete: array (
+  'id' => '42',
+)
+2020-08-01 15:41:06 DEBUG (7): onAfterAdminInvoiceDelete: array (
+  'id' => '42',
+)
+2020-08-01 15:41:06 INFO (6): Removed invoice #42
+2020-08-01 15:45:30 DEBUG (7): onBeforeProductAddedToCart: array (
+  'register_sld' => 'asd',
+  'register_tld' => '.com',
+  'register_years' => '1',
+  'ns1' => '',
+  'ns2' => '',
+  'ns3' => '',
+  'ns4' => '',
+  'transfer_sld' => '',
+  'transfer_tld' => '.com',
+  'transfer_code' => '',
+  'id' => '1',
+  'action' => 'register',
+  'multiple' => '1',
+  'cart_id' => '43',
+  'product_id' => '1',
+)
+2020-08-01 15:45:30 INFO (6): Added "Domains registration and transfer" to shopping cart
+2020-08-01 15:45:30 DEBUG (7): onAfterProductAddedToCart: array (
+  'register_sld' => 'asd',
+  'register_tld' => '.com',
+  'register_years' => '1',
+  'ns1' => '',
+  'ns2' => '',
+  'ns3' => '',
+  'ns4' => '',
+  'transfer_sld' => '',
+  'transfer_tld' => '.com',
+  'transfer_code' => '',
+  'id' => '1',
+  'action' => 'register',
+  'multiple' => '1',
+  'cart_id' => '43',
+  'product_id' => '1',
+)
+2020-08-01 15:45:33 DEBUG (7): onBeforeClientCheckout: array (
+  'ip' => '::1',
+  'client_id' => '1',
+  'cart_id' => '43',
+)
+2020-08-01 15:45:33 INFO (6): Prepared new invoice "44"
+2020-08-01 15:45:33 DEBUG (7): onBeforeAdminInvoiceApprove: array (
+  'id' => '44',
+)
+2020-08-01 15:45:33 DEBUG (7): onAfterAdminInvoiceApprove: array (
+  'id' => '44',
+)
+2020-08-01 15:45:33 INFO (6): Approved invoice "44"
+2020-08-01 15:45:34 INFO (6): Checked out shopping cart
+2020-08-01 15:45:34 DEBUG (7): onAfterClientOrderCreate: array (
+  'ip' => '::1',
+  'client_id' => '1',
+  'id' => '42',
+)
+2020-08-01 15:45:48 DEBUG (7): onBeforeAdminTransactionCreate: array (
+  'skip_validation' => true,
+  'bb_invoice_id' => '44',
+  'bb_gateway_id' => '5',
+  'get' => 
+  array (
+    'bb_invoice_id' => '44',
+    'bb_gateway_id' => '5',
+    'bb_redirect' => '1',
+    'bb_invoice_hash' => '8d6fce2e796fb3b80929aa70933a55cf7c295159',
+  ),
+  'post' => 
+  array (
+    'status' => 'PERFORMED',
+    'amount' => '11.99',
+    'currency' => 'USD',
+    'description' => '44',
+    'hash' => '83fc5b0f9dd7711e3e6f597bc793b6379fe2fcba',
+    'id_sale' => '21361841',
+  ),
+  'server' => 
+  array (
+    'HTTP_AUTHORIZATION' => '',
+    'HTTP_HOST' => 'localhost:8888',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'HTTP_ACCEPT_LANGUAGE' => 'id,en-US;q=0.7,en;q=0.3',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'CONTENT_LENGTH' => '120',
+    'HTTP_ORIGIN' => 'null',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_COOKIE' => 'PHPSESSID=6eb4ccd80e206e9b38e195057dfc4930',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'localhost',
+    'SERVER_ADDR' => '::1',
+    'SERVER_PORT' => '8888',
+    'REMOTE_ADDR' => '::1',
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/boxbilling',
+    'SERVER_ADMIN' => 'you@example.com',
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/boxbilling/bb-ipn.php',
+    'REMOTE_PORT' => '62309',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'POST',
+    'QUERY_STRING' => 'bb_invoice_id=44&bb_gateway_id=5&bb_redirect=1&bb_invoice_hash=8d6fce2e796fb3b80929aa70933a55cf7c295159',
+    'REQUEST_URI' => '/bb-ipn.php?bb_invoice_id=44&bb_gateway_id=5&bb_redirect=1&bb_invoice_hash=8d6fce2e796fb3b80929aa70933a55cf7c295159',
+    'SCRIPT_NAME' => '/bb-ipn.php',
+    'PHP_SELF' => '/bb-ipn.php',
+    'REQUEST_TIME_FLOAT' => 1596296748.8199999332427978515625,
+    'REQUEST_TIME' => 1596296748,
+    'argv' => 
+    array (
+      0 => 'bb_invoice_id=44&bb_gateway_id=5&bb_redirect=1&bb_invoice_hash=8d6fce2e796fb3b80929aa70933a55cf7c295159',
+    ),
+    'argc' => 1,
+  ),
+  'http_raw_post_data' => 'status=PERFORMED&amount=11.99&currency=USD&description=44&hash=83fc5b0f9dd7711e3e6f597bc793b6379fe2fcba&id_sale=21361841',
+)
+2020-08-01 15:45:48 INFO (6): Received transaction 107 from payment gateway 5
+2020-08-01 15:45:48 DEBUG (7): onAfterAdminTransactionCreate: array (
+  'id' => 107,
+)
+2020-08-01 15:45:48 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:45:48 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:45:48 INFO (6): Updated transaction #107
+2020-08-01 15:45:48 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:45:48 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:45:48 INFO (6): Updated transaction #107
+2020-08-01 15:45:48 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:45:48 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:45:48 INFO (6): Updated transaction #107
+2020-08-01 15:45:48 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:45:48 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:45:48 INFO (6): Updated transaction #107
+2020-08-01 15:45:48 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:45:48 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:45:48 INFO (6): Updated transaction #107
+2020-08-01 15:45:48 DEBUG (7): onAfterAdminInvoicePaymentReceived: array (
+  'id' => '44',
+)
+2020-08-01 15:45:48 INFO (6): Marked invoice "44" as paid
+2020-08-01 15:45:48 INFO (6): Cover invoice with client credits
+2020-08-01 15:45:48 INFO (6): Executed action to try cover unpaid invoices with client credits
+2020-08-01 15:45:48 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:45:48 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:45:48 INFO (6): Updated transaction #107
+2020-08-01 15:46:12 DEBUG (7): onBeforeAdminTransactionProcess: array (
+  'id' => '107',
+)
+2020-08-01 15:46:12 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:46:12 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:46:12 INFO (6): Updated transaction #107
+2020-08-01 15:46:12 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:46:12 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:46:12 INFO (6): Updated transaction #107
+2020-08-01 15:46:12 INFO (6): Cover invoice with client credits
+2020-08-01 15:46:12 INFO (6): Executed action to try cover unpaid invoices with client credits
+2020-08-01 15:46:12 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:46:12 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:46:12 INFO (6): Updated transaction #107
+2020-08-01 15:46:12 DEBUG (7): onAfterAdminTransactionProcess: array (
+  'id' => '107',
+)
+2020-08-01 15:46:13 INFO (6): Processed transaction #107
+2020-08-01 15:46:37 DEBUG (7): onBeforeAdminTransactionProcess: array (
+  'id' => '107',
+)
+2020-08-01 15:46:37 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:46:37 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:46:37 INFO (6): Updated transaction #107
+2020-08-01 15:46:37 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:46:37 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:46:37 INFO (6): Updated transaction #107
+2020-08-01 15:46:37 INFO (6): Cover invoice with client credits
+2020-08-01 15:46:37 INFO (6): Executed action to try cover unpaid invoices with client credits
+2020-08-01 15:46:37 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:46:37 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:46:37 INFO (6): Updated transaction #107
+2020-08-01 15:46:37 DEBUG (7): onAfterAdminTransactionProcess: array (
+  'id' => '107',
+)
+2020-08-01 15:46:37 INFO (6): Processed transaction #107
+2020-08-01 15:47:03 DEBUG (7): onBeforeAdminTransactionProcess: array (
+  'id' => '107',
+)
+2020-08-01 15:47:03 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:47:03 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:47:03 INFO (6): Updated transaction #107
+2020-08-01 15:47:03 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:47:03 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:47:03 INFO (6): Updated transaction #107
+2020-08-01 15:47:03 INFO (6): Cover invoice with client credits
+2020-08-01 15:47:03 INFO (6): Executed action to try cover unpaid invoices with client credits
+2020-08-01 15:47:03 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:47:03 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:47:03 INFO (6): Updated transaction #107
+2020-08-01 15:47:03 DEBUG (7): onAfterAdminTransactionProcess: array (
+  'id' => '107',
+)
+2020-08-01 15:47:03 INFO (6): Processed transaction #107
+2020-08-01 15:47:22 DEBUG (7): onBeforeProductAddedToCart: array (
+  'register_sld' => 'qw',
+  'register_tld' => '.com',
+  'register_years' => '1',
+  'ns1' => '',
+  'ns2' => '',
+  'ns3' => '',
+  'ns4' => '',
+  'transfer_sld' => '',
+  'transfer_tld' => '.com',
+  'transfer_code' => '',
+  'id' => '1',
+  'action' => 'register',
+  'multiple' => '1',
+  'cart_id' => '44',
+  'product_id' => '1',
+)
+2020-08-01 15:47:22 INFO (6): Added "Domains registration and transfer" to shopping cart
+2020-08-01 15:47:22 DEBUG (7): onAfterProductAddedToCart: array (
+  'register_sld' => 'qw',
+  'register_tld' => '.com',
+  'register_years' => '1',
+  'ns1' => '',
+  'ns2' => '',
+  'ns3' => '',
+  'ns4' => '',
+  'transfer_sld' => '',
+  'transfer_tld' => '.com',
+  'transfer_code' => '',
+  'id' => '1',
+  'action' => 'register',
+  'multiple' => '1',
+  'cart_id' => '44',
+  'product_id' => '1',
+)
+2020-08-01 15:47:23 DEBUG (7): onBeforeClientCheckout: array (
+  'ip' => '::1',
+  'client_id' => '1',
+  'cart_id' => '44',
+)
+2020-08-01 15:47:23 INFO (6): Prepared new invoice "45"
+2020-08-01 15:47:23 DEBUG (7): onBeforeAdminInvoiceApprove: array (
+  'id' => '45',
+)
+2020-08-01 15:47:23 DEBUG (7): onAfterAdminInvoiceApprove: array (
+  'id' => '45',
+)
+2020-08-01 15:47:23 DEBUG (7): onAfterAdminInvoicePaymentReceived: array (
+  'id' => '45',
+)
+2020-08-01 15:47:23 INFO (6): Marked invoice "45" as paid
+2020-08-01 15:47:23 INFO (6): Approved invoice "45"
+2020-08-01 15:47:23 DEBUG (7): onBeforeAdminOrderActivate: array (
+  'id' => '43',
+)
+2020-08-01 15:47:23 DEBUG (7): onAfterAdminOrderActivate: array (
+  'id' => '43',
+)
+2020-08-01 15:47:23 INFO (6): Activated order #43
+2020-08-01 15:47:23 INFO (6): Checked out shopping cart
+2020-08-01 15:47:23 DEBUG (7): onAfterClientOrderCreate: array (
+  'ip' => '::1',
+  'client_id' => '1',
+  'id' => '43',
+)
+2020-08-01 15:47:34 DEBUG (7): onBeforeProductAddedToCart: array (
+  'register_sld' => '123',
+  'register_tld' => '.com',
+  'register_years' => '1',
+  'ns1' => '',
+  'ns2' => '',
+  'ns3' => '',
+  'ns4' => '',
+  'transfer_sld' => '',
+  'transfer_tld' => '.com',
+  'transfer_code' => '',
+  'id' => '1',
+  'action' => 'register',
+  'multiple' => '1',
+  'cart_id' => '45',
+  'product_id' => '1',
+)
+2020-08-01 15:47:34 INFO (6): Added "Domains registration and transfer" to shopping cart
+2020-08-01 15:47:34 DEBUG (7): onAfterProductAddedToCart: array (
+  'register_sld' => '123',
+  'register_tld' => '.com',
+  'register_years' => '1',
+  'ns1' => '',
+  'ns2' => '',
+  'ns3' => '',
+  'ns4' => '',
+  'transfer_sld' => '',
+  'transfer_tld' => '.com',
+  'transfer_code' => '',
+  'id' => '1',
+  'action' => 'register',
+  'multiple' => '1',
+  'cart_id' => '45',
+  'product_id' => '1',
+)
+2020-08-01 15:47:35 DEBUG (7): onBeforeClientCheckout: array (
+  'ip' => '::1',
+  'client_id' => '1',
+  'cart_id' => '45',
+)
+2020-08-01 15:47:35 INFO (6): Prepared new invoice "46"
+2020-08-01 15:47:35 DEBUG (7): onBeforeAdminInvoiceApprove: array (
+  'id' => '46',
+)
+2020-08-01 15:47:35 DEBUG (7): onAfterAdminInvoiceApprove: array (
+  'id' => '46',
+)
+2020-08-01 15:47:35 DEBUG (7): onAfterAdminInvoicePaymentReceived: array (
+  'id' => '46',
+)
+2020-08-01 15:47:35 INFO (6): Marked invoice "46" as paid
+2020-08-01 15:47:35 INFO (6): Approved invoice "46"
+2020-08-01 15:47:35 DEBUG (7): onBeforeAdminOrderActivate: array (
+  'id' => '44',
+)
+2020-08-01 15:47:35 DEBUG (7): onAfterAdminOrderActivate: array (
+  'id' => '44',
+)
+2020-08-01 15:47:35 INFO (6): Activated order #44
+2020-08-01 15:47:35 INFO (6): Checked out shopping cart
+2020-08-01 15:47:35 DEBUG (7): onAfterClientOrderCreate: array (
+  'ip' => '::1',
+  'client_id' => '1',
+  'id' => '44',
+)
+2020-08-01 15:47:43 DEBUG (7): onBeforeProductAddedToCart: array (
+  'register_sld' => '123',
+  'register_tld' => '.com',
+  'register_years' => '1',
+  'ns1' => '',
+  'ns2' => '',
+  'ns3' => '',
+  'ns4' => '',
+  'transfer_sld' => '',
+  'transfer_tld' => '.com',
+  'transfer_code' => '',
+  'id' => '1',
+  'action' => 'register',
+  'multiple' => '1',
+  'cart_id' => '46',
+  'product_id' => '1',
+)
+2020-08-01 15:47:43 INFO (6): Added "Domains registration and transfer" to shopping cart
+2020-08-01 15:47:43 DEBUG (7): onAfterProductAddedToCart: array (
+  'register_sld' => '123',
+  'register_tld' => '.com',
+  'register_years' => '1',
+  'ns1' => '',
+  'ns2' => '',
+  'ns3' => '',
+  'ns4' => '',
+  'transfer_sld' => '',
+  'transfer_tld' => '.com',
+  'transfer_code' => '',
+  'id' => '1',
+  'action' => 'register',
+  'multiple' => '1',
+  'cart_id' => '46',
+  'product_id' => '1',
+)
+2020-08-01 15:47:44 DEBUG (7): onBeforeClientCheckout: array (
+  'ip' => '::1',
+  'client_id' => '1',
+  'cart_id' => '46',
+)
+2020-08-01 15:47:44 INFO (6): Prepared new invoice "47"
+2020-08-01 15:47:44 DEBUG (7): onBeforeAdminInvoiceApprove: array (
+  'id' => '47',
+)
+2020-08-01 15:47:44 DEBUG (7): onAfterAdminInvoiceApprove: array (
+  'id' => '47',
+)
+2020-08-01 15:47:44 DEBUG (7): onAfterAdminInvoicePaymentReceived: array (
+  'id' => '47',
+)
+2020-08-01 15:47:44 INFO (6): Marked invoice "47" as paid
+2020-08-01 15:47:44 INFO (6): Approved invoice "47"
+2020-08-01 15:47:44 DEBUG (7): onBeforeAdminOrderActivate: array (
+  'id' => '45',
+)
+2020-08-01 15:47:44 DEBUG (7): onAfterAdminOrderActivate: array (
+  'id' => '45',
+)
+2020-08-01 15:47:44 INFO (6): Activated order #45
+2020-08-01 15:47:44 INFO (6): Checked out shopping cart
+2020-08-01 15:47:44 DEBUG (7): onAfterClientOrderCreate: array (
+  'ip' => '::1',
+  'client_id' => '1',
+  'id' => '45',
+)
+2020-08-01 15:47:53 DEBUG (7): onBeforeAdminTransactionProcess: array (
+  'id' => '107',
+)
+2020-08-01 15:47:53 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:47:53 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:47:53 INFO (6): Updated transaction #107
+2020-08-01 15:47:53 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:47:53 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:47:53 INFO (6): Updated transaction #107
+2020-08-01 15:47:53 INFO (6): Cover invoice with client credits
+2020-08-01 15:47:53 INFO (6): Executed action to try cover unpaid invoices with client credits
+2020-08-01 15:47:53 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:47:53 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:47:53 INFO (6): Updated transaction #107
+2020-08-01 15:47:53 DEBUG (7): onAfterAdminTransactionProcess: array (
+  'id' => '107',
+)
+2020-08-01 15:47:53 INFO (6): Processed transaction #107
+2020-08-01 15:48:24 DEBUG (7): onBeforeAdminTransactionProcess: array (
+  'id' => '107',
+)
+2020-08-01 15:48:24 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:48:24 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:48:24 INFO (6): Updated transaction #107
+2020-08-01 15:48:24 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:48:24 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:48:24 INFO (6): Updated transaction #107
+2020-08-01 15:52:38 DEBUG (7): onBeforeAdminTransactionProcess: array (
+  'id' => '107',
+)
+2020-08-01 15:52:38 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:52:38 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:52:38 INFO (6): Updated transaction #107
+2020-08-01 15:52:38 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:52:38 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:52:38 INFO (6): Updated transaction #107
+2020-08-01 15:53:15 DEBUG (7): onBeforeAdminTransactionProcess: array (
+  'id' => '107',
+)
+2020-08-01 15:53:15 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:53:15 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:53:15 INFO (6): Updated transaction #107
+2020-08-01 15:53:15 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:53:15 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:53:15 INFO (6): Updated transaction #107
+2020-08-01 15:53:38 DEBUG (7): onBeforeAdminTransactionProcess: array (
+  'id' => '107',
+)
+2020-08-01 15:53:38 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:53:38 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:53:38 INFO (6): Updated transaction #107
+2020-08-01 15:53:38 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:53:38 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:53:38 INFO (6): Updated transaction #107
+2020-08-01 15:53:38 INFO (6): Cover invoice with client credits
+2020-08-01 15:53:38 INFO (6): Executed action to try cover unpaid invoices with client credits
+2020-08-01 15:53:38 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:53:38 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:53:38 INFO (6): Updated transaction #107
+2020-08-01 15:53:38 DEBUG (7): onAfterAdminTransactionProcess: array (
+  'id' => '107',
+)
+2020-08-01 15:53:38 INFO (6): Processed transaction #107
+2020-08-01 15:53:41 DEBUG (7): onBeforeAdminTransactionProcess: array (
+  'id' => '107',
+)
+2020-08-01 15:53:41 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:53:41 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:53:41 INFO (6): Updated transaction #107
+2020-08-01 15:53:41 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:53:41 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:53:41 INFO (6): Updated transaction #107
+2020-08-01 15:53:41 INFO (6): Cover invoice with client credits
+2020-08-01 15:53:41 INFO (6): Executed action to try cover unpaid invoices with client credits
+2020-08-01 15:53:41 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:53:41 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '107',
+)
+2020-08-01 15:53:41 INFO (6): Updated transaction #107
+2020-08-01 15:53:41 DEBUG (7): onAfterAdminTransactionProcess: array (
+  'id' => '107',
+)
+2020-08-01 15:53:41 INFO (6): Processed transaction #107
+2020-08-01 15:54:18 DEBUG (7): onBeforeAdminTransactionProcess: array (
+  'id' => '107',
+)
+2020-08-01 15:55:36 DEBUG (7): onBeforeAdminOrderDelete: array (
+  'id' => '45',
+)
+2020-08-01 15:55:36 DEBUG (7): onAfterAdminOrderDelete: array (
+  'id' => '45',
+)
+2020-08-01 15:55:36 INFO (6): Deleted order #45
+2020-08-01 15:55:36 DEBUG (7): onBeforeAdminOrderDelete: array (
+  'id' => '44',
+)
+2020-08-01 15:55:36 DEBUG (7): onAfterAdminOrderDelete: array (
+  'id' => '44',
+)
+2020-08-01 15:55:36 INFO (6): Deleted order #44
+2020-08-01 15:55:36 DEBUG (7): onBeforeAdminOrderDelete: array (
+  'id' => '43',
+)
+2020-08-01 15:55:36 DEBUG (7): onAfterAdminOrderDelete: array (
+  'id' => '43',
+)
+2020-08-01 15:55:36 INFO (6): Deleted order #43
+2020-08-01 15:55:36 DEBUG (7): onBeforeAdminOrderDelete: array (
+  'id' => '42',
+)
+2020-08-01 15:55:36 DEBUG (7): onAfterAdminOrderDelete: array (
+  'id' => '42',
+)
+2020-08-01 15:55:36 INFO (6): Deleted order #42
+2020-08-01 15:55:45 DEBUG (7): onBeforeAdminInvoiceDelete: array (
+  'id' => '47',
+)
+2020-08-01 15:55:45 DEBUG (7): onAfterAdminInvoiceDelete: array (
+  'id' => '47',
+)
+2020-08-01 15:55:45 INFO (6): Removed invoice #47
+2020-08-01 15:55:45 DEBUG (7): onBeforeAdminInvoiceDelete: array (
+  'id' => '46',
+)
+2020-08-01 15:55:45 DEBUG (7): onAfterAdminInvoiceDelete: array (
+  'id' => '46',
+)
+2020-08-01 15:55:45 INFO (6): Removed invoice #46
+2020-08-01 15:55:45 DEBUG (7): onBeforeAdminInvoiceDelete: array (
+  'id' => '45',
+)
+2020-08-01 15:55:45 DEBUG (7): onAfterAdminInvoiceDelete: array (
+  'id' => '45',
+)
+2020-08-01 15:55:45 INFO (6): Removed invoice #45
+2020-08-01 15:55:45 DEBUG (7): onBeforeAdminInvoiceDelete: array (
+  'id' => '44',
+)
+2020-08-01 15:55:45 DEBUG (7): onAfterAdminInvoiceDelete: array (
+  'id' => '44',
+)
+2020-08-01 15:55:45 INFO (6): Removed invoice #44
+2020-08-01 15:55:48 INFO (6): Removed transaction #107
+2020-08-01 15:56:14 DEBUG (7): onBeforeProductAddedToCart: array (
+  'register_sld' => '123',
+  'register_tld' => '.com',
+  'register_years' => '3',
+  'ns1' => '',
+  'ns2' => '',
+  'ns3' => '',
+  'ns4' => '',
+  'transfer_sld' => '',
+  'transfer_tld' => '.com',
+  'transfer_code' => '',
+  'id' => '1',
+  'action' => 'register',
+  'multiple' => '1',
+  'cart_id' => '47',
+  'product_id' => '1',
+)
+2020-08-01 15:56:14 INFO (6): Added "Domains registration and transfer" to shopping cart
+2020-08-01 15:56:14 DEBUG (7): onAfterProductAddedToCart: array (
+  'register_sld' => '123',
+  'register_tld' => '.com',
+  'register_years' => '3',
+  'ns1' => '',
+  'ns2' => '',
+  'ns3' => '',
+  'ns4' => '',
+  'transfer_sld' => '',
+  'transfer_tld' => '.com',
+  'transfer_code' => '',
+  'id' => '1',
+  'action' => 'register',
+  'multiple' => '1',
+  'cart_id' => '47',
+  'product_id' => '1',
+)
+2020-08-01 15:56:15 DEBUG (7): onBeforeClientCheckout: array (
+  'ip' => '::1',
+  'client_id' => '1',
+  'cart_id' => '47',
+)
+2020-08-01 15:56:16 INFO (6): Prepared new invoice "48"
+2020-08-01 15:56:16 DEBUG (7): onBeforeAdminInvoiceApprove: array (
+  'id' => '48',
+)
+2020-08-01 15:56:16 DEBUG (7): onAfterAdminInvoiceApprove: array (
+  'id' => '48',
+)
+2020-08-01 15:56:16 DEBUG (7): onAfterAdminInvoicePaymentReceived: array (
+  'id' => '48',
+)
+2020-08-01 15:56:16 INFO (6): Marked invoice "48" as paid
+2020-08-01 15:56:16 INFO (6): Approved invoice "48"
+2020-08-01 15:56:16 DEBUG (7): onBeforeAdminOrderActivate: array (
+  'id' => '46',
+)
+2020-08-01 15:56:16 DEBUG (7): onAfterAdminOrderActivate: array (
+  'id' => '46',
+)
+2020-08-01 15:56:16 INFO (6): Activated order #46
+2020-08-01 15:56:16 INFO (6): Checked out shopping cart
+2020-08-01 15:56:16 DEBUG (7): onAfterClientOrderCreate: array (
+  'ip' => '::1',
+  'client_id' => '1',
+  'id' => '46',
+)
+2020-08-01 15:56:28 DEBUG (7): onBeforeProductAddedToCart: array (
+  'register_sld' => '123',
+  'register_tld' => '.com',
+  'register_years' => '2',
+  'ns1' => '',
+  'ns2' => '',
+  'ns3' => '',
+  'ns4' => '',
+  'transfer_sld' => '',
+  'transfer_tld' => '.com',
+  'transfer_code' => '',
+  'id' => '1',
+  'action' => 'register',
+  'multiple' => '1',
+  'cart_id' => '48',
+  'product_id' => '1',
+)
+2020-08-01 15:56:28 INFO (6): Added "Domains registration and transfer" to shopping cart
+2020-08-01 15:56:28 DEBUG (7): onAfterProductAddedToCart: array (
+  'register_sld' => '123',
+  'register_tld' => '.com',
+  'register_years' => '2',
+  'ns1' => '',
+  'ns2' => '',
+  'ns3' => '',
+  'ns4' => '',
+  'transfer_sld' => '',
+  'transfer_tld' => '.com',
+  'transfer_code' => '',
+  'id' => '1',
+  'action' => 'register',
+  'multiple' => '1',
+  'cart_id' => '48',
+  'product_id' => '1',
+)
+2020-08-01 15:56:30 DEBUG (7): onBeforeClientCheckout: array (
+  'ip' => '::1',
+  'client_id' => '1',
+  'cart_id' => '48',
+)
+2020-08-01 15:56:30 INFO (6): Prepared new invoice "49"
+2020-08-01 15:56:30 DEBUG (7): onBeforeAdminInvoiceApprove: array (
+  'id' => '49',
+)
+2020-08-01 15:56:30 DEBUG (7): onAfterAdminInvoiceApprove: array (
+  'id' => '49',
+)
+2020-08-01 15:56:30 INFO (6): Approved invoice "49"
+2020-08-01 15:56:30 INFO (6): Checked out shopping cart
+2020-08-01 15:56:30 DEBUG (7): onAfterClientOrderCreate: array (
+  'ip' => '::1',
+  'client_id' => '1',
+  'id' => '47',
+)
+2020-08-01 15:56:49 DEBUG (7): onBeforeAdminTransactionCreate: array (
+  'skip_validation' => true,
+  'bb_invoice_id' => '49',
+  'bb_gateway_id' => '5',
+  'get' => 
+  array (
+    'bb_invoice_id' => '49',
+    'bb_gateway_id' => '5',
+    'bb_redirect' => '1',
+    'bb_invoice_hash' => 'b50a531b281a89b227148bb69e469bb9f6d02f9f',
+  ),
+  'post' => 
+  array (
+    'status' => 'PERFORMED',
+    'amount' => '23.98',
+    'currency' => 'USD',
+    'description' => '49',
+    'hash' => 'fb7f34f953781cf6e3181567aedb9fb7fa6e693b',
+    'id_sale' => '21361943',
+  ),
+  'server' => 
+  array (
+    'HTTP_AUTHORIZATION' => '',
+    'HTTP_HOST' => 'localhost:8888',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'HTTP_ACCEPT_LANGUAGE' => 'id,en-US;q=0.7,en;q=0.3',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'CONTENT_LENGTH' => '120',
+    'HTTP_ORIGIN' => 'null',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_COOKIE' => 'PHPSESSID=6eb4ccd80e206e9b38e195057dfc4930',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'localhost',
+    'SERVER_ADDR' => '::1',
+    'SERVER_PORT' => '8888',
+    'REMOTE_ADDR' => '::1',
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/boxbilling',
+    'SERVER_ADMIN' => 'you@example.com',
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/boxbilling/bb-ipn.php',
+    'REMOTE_PORT' => '65160',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'POST',
+    'QUERY_STRING' => 'bb_invoice_id=49&bb_gateway_id=5&bb_redirect=1&bb_invoice_hash=b50a531b281a89b227148bb69e469bb9f6d02f9f',
+    'REQUEST_URI' => '/bb-ipn.php?bb_invoice_id=49&bb_gateway_id=5&bb_redirect=1&bb_invoice_hash=b50a531b281a89b227148bb69e469bb9f6d02f9f',
+    'SCRIPT_NAME' => '/bb-ipn.php',
+    'PHP_SELF' => '/bb-ipn.php',
+    'REQUEST_TIME_FLOAT' => 1596297409.210999965667724609375,
+    'REQUEST_TIME' => 1596297409,
+    'argv' => 
+    array (
+      0 => 'bb_invoice_id=49&bb_gateway_id=5&bb_redirect=1&bb_invoice_hash=b50a531b281a89b227148bb69e469bb9f6d02f9f',
+    ),
+    'argc' => 1,
+  ),
+  'http_raw_post_data' => 'status=PERFORMED&amount=23.98&currency=USD&description=49&hash=fb7f34f953781cf6e3181567aedb9fb7fa6e693b&id_sale=21361943',
+)
+2020-08-01 15:56:49 INFO (6): Received transaction 108 from payment gateway 5
+2020-08-01 15:56:49 DEBUG (7): onAfterAdminTransactionCreate: array (
+  'id' => 108,
+)
+2020-08-01 15:56:49 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '108',
+)
+2020-08-01 15:56:49 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '108',
+)
+2020-08-01 15:56:49 INFO (6): Updated transaction #108
+2020-08-01 15:56:49 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '108',
+)
+2020-08-01 15:56:49 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '108',
+)
+2020-08-01 15:56:49 INFO (6): Updated transaction #108
+2020-08-01 15:56:49 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '108',
+)
+2020-08-01 15:56:49 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '108',
+)
+2020-08-01 15:56:49 INFO (6): Updated transaction #108
+2020-08-01 15:56:49 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '108',
+)
+2020-08-01 15:56:49 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '108',
+)
+2020-08-01 15:56:49 INFO (6): Updated transaction #108
+2020-08-01 15:56:49 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '108',
+)
+2020-08-01 15:56:49 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '108',
+)
+2020-08-01 15:56:49 INFO (6): Updated transaction #108
+2020-08-01 15:56:49 INFO (6): Cover invoice with client credits
+2020-08-01 15:56:49 INFO (6): Executed action to try cover unpaid invoices with client credits
+2020-08-01 15:56:49 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '108',
+)
+2020-08-01 15:56:49 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '108',
+)
+2020-08-01 15:56:49 INFO (6): Updated transaction #108
+2020-08-01 15:57:54 DEBUG (7): onBeforeProductAddedToCart: array (
+  'register_sld' => '123',
+  'register_tld' => '.com',
+  'register_years' => '2',
+  'ns1' => '',
+  'ns2' => '',
+  'ns3' => '',
+  'ns4' => '',
+  'transfer_sld' => '',
+  'transfer_tld' => '.com',
+  'transfer_code' => '',
+  'id' => '1',
+  'action' => 'register',
+  'multiple' => '1',
+  'cart_id' => '49',
+  'product_id' => '1',
+)
+2020-08-01 15:57:54 INFO (6): Added "Domains registration and transfer" to shopping cart
+2020-08-01 15:57:54 DEBUG (7): onAfterProductAddedToCart: array (
+  'register_sld' => '123',
+  'register_tld' => '.com',
+  'register_years' => '2',
+  'ns1' => '',
+  'ns2' => '',
+  'ns3' => '',
+  'ns4' => '',
+  'transfer_sld' => '',
+  'transfer_tld' => '.com',
+  'transfer_code' => '',
+  'id' => '1',
+  'action' => 'register',
+  'multiple' => '1',
+  'cart_id' => '49',
+  'product_id' => '1',
+)
+2020-08-01 15:57:56 DEBUG (7): onBeforeClientCheckout: array (
+  'ip' => '::1',
+  'client_id' => '1',
+  'cart_id' => '49',
+)
+2020-08-01 15:57:56 INFO (6): Prepared new invoice "50"
+2020-08-01 15:57:56 DEBUG (7): onBeforeAdminInvoiceApprove: array (
+  'id' => '50',
+)
+2020-08-01 15:57:56 DEBUG (7): onAfterAdminInvoiceApprove: array (
+  'id' => '50',
+)
+2020-08-01 15:57:56 INFO (6): Approved invoice "50"
+2020-08-01 15:57:56 INFO (6): Checked out shopping cart
+2020-08-01 15:57:56 DEBUG (7): onAfterClientOrderCreate: array (
+  'ip' => '::1',
+  'client_id' => '1',
+  'id' => '48',
+)
+2020-08-01 15:58:09 DEBUG (7): onBeforeAdminTransactionCreate: array (
+  'skip_validation' => true,
+  'bb_invoice_id' => '50',
+  'bb_gateway_id' => '5',
+  'get' => 
+  array (
+    'bb_invoice_id' => '50',
+    'bb_gateway_id' => '5',
+    'bb_redirect' => '1',
+    'bb_invoice_hash' => '9575b6aabc067ec3a83eb5d3c090a38364bb7e8f',
+  ),
+  'post' => 
+  array (
+    'status' => 'PERFORMED',
+    'amount' => '23.98',
+    'currency' => 'USD',
+    'description' => '50',
+    'hash' => '62176d55976d119faef7b7ef06aee998592ec455',
+    'id_sale' => '21361952',
+  ),
+  'server' => 
+  array (
+    'HTTP_AUTHORIZATION' => '',
+    'HTTP_HOST' => 'localhost:8888',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'HTTP_ACCEPT_LANGUAGE' => 'id,en-US;q=0.7,en;q=0.3',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate',
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded',
+    'CONTENT_LENGTH' => '120',
+    'HTTP_ORIGIN' => 'null',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_COOKIE' => 'PHPSESSID=6eb4ccd80e206e9b38e195057dfc4930',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin',
+    'SERVER_SIGNATURE' => '',
+    'SERVER_SOFTWARE' => 'Apache',
+    'SERVER_NAME' => 'localhost',
+    'SERVER_ADDR' => '::1',
+    'SERVER_PORT' => '8888',
+    'REMOTE_ADDR' => '::1',
+    'DOCUMENT_ROOT' => '/Applications/MAMP/htdocs/boxbilling',
+    'SERVER_ADMIN' => 'you@example.com',
+    'SCRIPT_FILENAME' => '/Applications/MAMP/htdocs/boxbilling/bb-ipn.php',
+    'REMOTE_PORT' => '65510',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'POST',
+    'QUERY_STRING' => 'bb_invoice_id=50&bb_gateway_id=5&bb_redirect=1&bb_invoice_hash=9575b6aabc067ec3a83eb5d3c090a38364bb7e8f',
+    'REQUEST_URI' => '/bb-ipn.php?bb_invoice_id=50&bb_gateway_id=5&bb_redirect=1&bb_invoice_hash=9575b6aabc067ec3a83eb5d3c090a38364bb7e8f',
+    'SCRIPT_NAME' => '/bb-ipn.php',
+    'PHP_SELF' => '/bb-ipn.php',
+    'REQUEST_TIME_FLOAT' => 1596297489.85599994659423828125,
+    'REQUEST_TIME' => 1596297489,
+    'argv' => 
+    array (
+      0 => 'bb_invoice_id=50&bb_gateway_id=5&bb_redirect=1&bb_invoice_hash=9575b6aabc067ec3a83eb5d3c090a38364bb7e8f',
+    ),
+    'argc' => 1,
+  ),
+  'http_raw_post_data' => 'status=PERFORMED&amount=23.98&currency=USD&description=50&hash=62176d55976d119faef7b7ef06aee998592ec455&id_sale=21361952',
+)
+2020-08-01 15:58:09 INFO (6): Received transaction 109 from payment gateway 5
+2020-08-01 15:58:09 DEBUG (7): onAfterAdminTransactionCreate: array (
+  'id' => 109,
+)
+2020-08-01 15:58:09 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '109',
+)
+2020-08-01 15:58:09 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '109',
+)
+2020-08-01 15:58:09 INFO (6): Updated transaction #109
+2020-08-01 15:58:09 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '109',
+)
+2020-08-01 15:58:09 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '109',
+)
+2020-08-01 15:58:09 INFO (6): Updated transaction #109
+2020-08-01 15:58:09 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '109',
+)
+2020-08-01 15:58:09 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '109',
+)
+2020-08-01 15:58:09 INFO (6): Updated transaction #109
+2020-08-01 15:58:09 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '109',
+)
+2020-08-01 15:58:09 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '109',
+)
+2020-08-01 15:58:09 INFO (6): Updated transaction #109
+2020-08-01 15:58:09 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '109',
+)
+2020-08-01 15:58:09 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '109',
+)
+2020-08-01 15:58:09 INFO (6): Updated transaction #109
+2020-08-01 15:58:09 DEBUG (7): onAfterAdminInvoicePaymentReceived: array (
+  'id' => '50',
+)
+2020-08-01 15:58:09 INFO (6): Marked invoice "50" as paid
+2020-08-01 15:58:09 INFO (6): Cover invoice with client credits
+2020-08-01 15:58:09 INFO (6): Executed action to try cover unpaid invoices with client credits
+2020-08-01 15:58:09 DEBUG (7): onBeforeAdminTransactionUpdate: array (
+  'id' => '109',
+)
+2020-08-01 15:58:09 DEBUG (7): onAfterAdminTransactionUpdate: array (
+  'id' => '109',
+)
+2020-08-01 15:58:09 INFO (6): Updated transaction #109

@@ -78,14 +78,6 @@ class Payment_Adapter_Paylane implements \Box\InjectionAwareInterface
 
     public function processTransaction($api_admin, $id, $data, $gateway_id)
     {
-        // echo '<pre>';
-        // print_r($tx);
-        // echo '</pre>';
-        // die();
-        // if(APPLICATION_ENV != 'testing' && !$this->_isIpnValid($data)) {
-        //     throw new Payment_Exception('IPN is not valid');
-        // }
-        
         $ipn = $data['post'];
         
         $tx = $api_admin->invoice_transaction_get(array('id'=>$id));
@@ -119,8 +111,8 @@ class Payment_Adapter_Paylane implements \Box\InjectionAwareInterface
             $api_admin->invoice_transaction_update(array('id'=>$id, 'currency'=>$ipn['currency']));
         }
 
-        // $invoice = $api_admin->invoice_get(array('id'=>$data['get']['bb_invoice_id']));
-        // $client_id = $invoice['client']['id'];
+        $invoice = $api_admin->invoice_get(array('id'=>$data['get']['bb_invoice_id']));
+        $client_id = $invoice['client']['id'];
 
         // PENDING – sale is waiting to be performed (in progress or not completed);
         // PERFORMED – sale has been successfully performed;
@@ -131,30 +123,21 @@ class Payment_Adapter_Paylane implements \Box\InjectionAwareInterface
             case 'PENDING':
             case 'PERFORMED':
             case 'CLEARED':
-                $invoiceModel = $this->di['db']->load('Invoice', $data['get']['bb_invoice_id']);
-                $clientModel = $this->di['db']->load('Client', $invoiceModel->client_id);
+                // $invoiceModel = $this->di['db']->load('Invoice', $data['get']['bb_invoice_id']);
+                $clientModel = $this->di['db']->load('Client', $client_id);
 
                 $bd = array(
-                    'id'            =>  $invoiceModel->client_id,
+                    'id'            =>  $client_id,
                     'amount'        =>  $ipn['amount'],
                     'description'   =>  'Paylane transaction '.$ipn['id_sale'],
                     'type'          =>  'Paylane',
                     'rel_id'        =>  $ipn['id_sale'],
                 );
-
-                // if ($this->isIpnDuplicate($ipn)){
-                //     throw new Payment_Exception('IPN is duplicate');
-                // }
-
-                // $clientService = $this->di['mod_service']('Client');
-                // $clientService->addFunds($clientModel, $bd['amount'], $bd['description'], $bd);
-
-                // print_r($clientService);
-                // die();
-                // if ($this->isIpnDuplicate($ipn)){
-                //     throw new Payment_Exception('IPN is duplicate');
-                // }
-                // $api_admin->client_balance_add_funds($bd);
+                
+                if ($this->isIpnDuplicate($ipn)){
+                    throw new Payment_Exception('IPN is duplicate');
+                }
+                $api_admin->client_balance_add_funds($bd);
 
                 if($tx['invoice_id']) {
                     $api_admin->invoice_pay_with_credits(array('id'=>$tx['invoice_id']));
@@ -166,76 +149,11 @@ class Payment_Adapter_Paylane implements \Box\InjectionAwareInterface
             case 'ERROR':
                 $status = 'error';
                 break;
+
+            default:
+                error_log('Unknown Paylane transaction '.$tx['invoice_id']);
+                break;
         }
-        // }
-
-        // switch ($ipn['txn_type']) {
-            
-        //     case 'web_accept':
-        //     case 'subscr_payment':
-                
-        //         if($ipn['payment_status'] == 'Completed') {
-        //             $bd = array(
-        //                 'id'            =>  $client_id,
-        //                 'amount'        =>  $ipn['mc_gross'],
-        //                 'description'   =>  'Paylane transaction '.$ipn['txn_id'],
-        //                 'type'          =>  'Paylane',
-        //                 'rel_id'        =>  $ipn['txn_id'],
-        //             );
-        //             if ($this->isIpnDuplicate($ipn)){
-        //                 throw new Payment_Exception('IPN is duplicate');
-        //             }
-        //             $api_admin->client_balance_add_funds($bd);
-        //             if($tx['invoice_id']) {
-        //                 $api_admin->invoice_pay_with_credits(array('id'=>$tx['invoice_id']));
-        //             }
-        //             $api_admin->invoice_batch_pay_with_credits(array('client_id'=>$client_id));
-        //         }
-                
-        //         break;
-            
-        //     case 'subscr_signup':
-        //         $sd = array(
-        //             'client_id'     =>  $client_id,
-        //             'gateway_id'    =>  $gateway_id,
-        //             'currency'      =>  $ipn['mc_currency'],
-        //             'sid'           =>  $ipn['subscr_id'],
-        //             'status'        =>  'active',
-        //             'period'        =>  str_replace(' ', '', $ipn['period3']),
-        //             'amount'        =>  $ipn['amount3'],
-        //             'rel_type'      =>  'invoice',
-        //             'rel_id'        =>  $invoice['id'],
-        //         );
-        //         $api_admin->invoice_subscription_create($sd);
-                
-        //         $t = array(
-        //             'id'            => $id, 
-        //             's_id'          => $sd['sid'],
-        //             's_period'      => $sd['period'],
-        //         );
-        //         $api_admin->invoice_transaction_update($t);
-        //         break;
-
-        //     case 'recurring_payment_suspended_due_to_max_failed_payment':
-        //     case 'subscr_failed':
-        //     case 'subscr_eot':
-        //     case 'subscr_cancel':
-        //         $s = $api_admin->invoice_subscription_get(array('sid'=>$ipn['subscr_id']));
-        //         $api_admin->invoice_subscription_update(array('id'=>$s['id'], 'status'=>'canceled'));
-        //         break;
-
-        //     default:
-        //         error_log('Unknown paypal transaction '.$id);
-        //         break;
-        // }
-        
-        // if(isset($ipn['payment_status']) && $ipn['payment_status'] == 'Refunded') {
-        //     $refd = array(
-        //         'id'    => $invoice['id'],
-        //         'note'  => 'Paylane refund '.$ipn['parent_txn_id'],
-        //     );
-        //     $api_admin->invoice_refund($refd);
-        // }
         
         $d = array(
             'id'        => $id, 
@@ -258,43 +176,11 @@ class Payment_Adapter_Paylane implements \Box\InjectionAwareInterface
 
     private function getRedirectUrl($bb_invoice_hash = null)
     {
-        // $gatewayModel = $this->di['db']->findOne('PayGateway', 'gateway = ? and enabled = 1', array('ClientBalance'));
-        // if (!$gatewayModel instanceof \Model_PayGateway){
-        //     throw new Payment_Exception('ClientBalance gateway is not enabled', null, 301);
-        // }
-
-        // $invoiceModel = $this->di['db']->load('Invoice', $invoice_id);
-        // $invoiceService = $this->di['mod_service']('Invoice');
-        // if ($invoiceService->isInvoiceTypeDeposit($invoiceModel)){
-        //     throw new Payment_Exception('Forbidden to pay deposit invoice with this gateway', null, 302);
-        // }
-
-        // $gatewayService = $this->di['mod_service']('Invoice', 'PayGateway');
-        // return $gatewayService->getCallbackUrl($gatewayService, $invoice_id);
-
-        // return 'http://localhost:8888/index.php?_url=/invoice/' . $invoice_id;
         return $this->config['base_url'] . '/bb-ipn.php?bb_redirect=1&bb_invoice_hash=' . $bb_invoice_hash;
     }
 
     private function getCallbackUrl($bb_invoice_id = null, $bb_invoice_hash = null, $bb_gateway_id = 5)
     {
-        // $gatewayModel = $this->di['db']->findOne('PayGateway', 'gateway = ? and enabled = 1', array('ClientBalance'));
-        // if (!$gatewayModel instanceof \Model_PayGateway){
-        //     throw new Payment_Exception('ClientBalance gateway is not enabled', null, 301);
-        // }
-
-        // $invoiceModel = $this->di['db']->load('Invoice', $invoice_id);
-        // $invoiceService = $this->di['mod_service']('Invoice');
-        // if ($invoiceService->isInvoiceTypeDeposit($invoiceModel)){
-        //     throw new Payment_Exception('Forbidden to pay deposit invoice with this gateway', null, 302);
-        // }
-
-        // $gatewayService = $this->di['mod_service']('Invoice', 'PayGateway');
-        // return $gatewayService->getCallbackUrl($gatewayService, $invoice_id);
-
-        // return 'http://localhost:8888/index.php?_url=/invoice/' . $invoice_id;
-        
-        
         return $this->config['base_url'] . '/bb-ipn.php?bb_invoice_id=' . $bb_invoice_id . '&bb_gateway_id=' . $bb_gateway_id . '&bb_redirect=1' . '&bb_invoice_hash=' . $bb_invoice_hash;
     }
 
@@ -419,10 +305,10 @@ class Payment_Adapter_Paylane implements \Box\InjectionAwareInterface
                 LIMIT 2';
 
         $bindings = array(
-            ':transaction_id' => $ipn['txn_id'],
-            ':transaction_status' => $ipn['payment_status'],
-            ':transaction_type' => $ipn['txn_type'],
-            ':transaction_amount' => $ipn['mc_gross'],
+            ':transaction_id' => $ipn['id_sale'],
+            ':transaction_status' => 'complete',
+            ':transaction_type' => 'payment',
+            ':transaction_amount' => $ipn['amount'],
         );
 
         $rows = $this->di['db']->getAll($sql, $bindings);

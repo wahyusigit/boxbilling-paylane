@@ -16,18 +16,18 @@ return array (
   'db' => 
   array (
     // Production
-    'type' => 'mysql',
-    'host' => 'us-cdbr-east-02.cleardb.com',
-    'name' => 'heroku_193a5a9ed3514b7',
-    'user' => 'b636cad79c191e',
-    'password' => 'b4f79572',
+    // 'type' => 'mysql',
+    // 'host' => 'us-cdbr-east-02.cleardb.com',
+    // 'name' => 'heroku_193a5a9ed3514b7',
+    // 'user' => 'b636cad79c191e',
+    // 'password' => 'b4f79572',
 
     // Local Dev
-    // 'type' => 'mysql',
-    // 'host' => 'localhost',
-    // 'name' => 'boxbilling',
-    // 'user' => 'root',
-    // 'password' => 'root',
+    'type' => 'mysql',
+    'host' => 'localhost',
+    'name' => 'boxbilling',
+    'user' => 'root',
+    'password' => 'root',
   ),
   'twig' => 
   array (
