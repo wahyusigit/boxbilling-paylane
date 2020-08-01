@@ -661,3 +661,22 @@ Stack trace:
 #5 /Applications/MAMP/htdocs/boxbilling/index.php(27): Box_App->run()
 #6 {main}
 [01-Aug-2020 14:27:01 UTC] Page favicon not found
+[01-Aug-2020 14:47:07 UTC] 8192 Function create_function() is deprecated /Applications/MAMP/htdocs/boxbilling/bb-library/Box/BeanHelper.php 60
+[01-Aug-2020 14:47:07 UTC] PHP Deprecated:  Function create_function() is deprecated in /Applications/MAMP/htdocs/boxbilling/bb-library/Box/BeanHelper.php on line 60
+[01-Aug-2020 14:47:25 UTC] 8192 Function create_function() is deprecated /Applications/MAMP/htdocs/boxbilling/bb-library/Box/BeanHelper.php 60
+[01-Aug-2020 14:47:25 UTC] PHP Deprecated:  Function create_function() is deprecated in /Applications/MAMP/htdocs/boxbilling/bb-library/Box/BeanHelper.php on line 60
+[01-Aug-2020 14:47:35 UTC] 8192 Function create_function() is deprecated /Applications/MAMP/htdocs/boxbilling/bb-library/Box/BeanHelper.php 60
+[01-Aug-2020 14:47:35 UTC] PHP Deprecated:  Function create_function() is deprecated in /Applications/MAMP/htdocs/boxbilling/bb-library/Box/BeanHelper.php on line 60
+[01-Aug-2020 14:47:48 UTC] 8192 Function create_function() is deprecated /Applications/MAMP/htdocs/boxbilling/bb-library/Box/BeanHelper.php 60
+[01-Aug-2020 14:47:48 UTC] PHP Deprecated:  Function create_function() is deprecated in /Applications/MAMP/htdocs/boxbilling/bb-library/Box/BeanHelper.php on line 60
+[01-Aug-2020 14:47:49 UTC] Unable to find template "mod_page_favicon.ico" (looked into: /Applications/MAMP/htdocs/boxbilling/bb-themes/huraga/html, /Applications/MAMP/htdocs/boxbilling/bb-modules/Page/html_client).
+[01-Aug-2020 14:47:49 UTC] Box_Exception: Page not found in /Applications/MAMP/htdocs/boxbilling/bb-library/Box/AppClient.php:72
+Stack trace:
+#0 /Applications/MAMP/htdocs/boxbilling/bb-library/Box/AppClient.php(56): Box_AppClient->render('mod_page_favico...', Array, 'ico')
+#1 [internal function]: Box_AppClient->get_custom_page('favicon')
+#2 /Applications/MAMP/htdocs/boxbilling/bb-library/Box/App.php(220): ReflectionMethod->invokeArgs(Object(Box_AppClient), Array)
+#3 /Applications/MAMP/htdocs/boxbilling/bb-library/Box/App.php(259): Box_App->execute('get_custom_page', Array)
+#4 /Applications/MAMP/htdocs/boxbilling/bb-library/Box/App.php(143): Box_App->processRequest()
+#5 /Applications/MAMP/htdocs/boxbilling/index.php(27): Box_App->run()
+#6 {main}
+[01-Aug-2020 14:47:49 UTC] Page favicon not found
