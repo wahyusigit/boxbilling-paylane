@@ -1,0 +1,2 @@
+[31-Jul-2020 09:05:58 UTC] PHP Notice:  Use of undefined constant BB_PATH_LANGS - assumed 'BB_PATH_LANGS' in /Applications/MAMP/htdocs/boxbilling/bb-library/Box/Translate.php on line 78
+[31-Jul-2020 09:05:58 UTC] PHP Notice:  A session had already been started - ignoring session_start() in /Applications/MAMP/htdocs/boxbilling/bb-library/Box/Session.php on line 37
